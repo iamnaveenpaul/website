@@ -1,2 +1,56 @@
 @charset "UTF-8";
 @import "minima";
+
+pre,code {
+	background-color: #eee;
+}
+
+.hero h1,
+.hero p {
+	width: 75%;
+	text-align: center;
+	margin: 25px auto;
+}
+
+.hero {
+	button {
+		display: block;
+		color: #fff;
+		border: 0;
+		background:#FF5959;
+		font-size: 1.5rem;
+		font-family: inherit;
+		border-radius: 5px;
+		padding: 5px 15px;
+		margin: 40px auto auto auto;
+	}
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.what {
+	text-align: center;
+	margin: 50px 0;
+	.footer-col {
+		width: 30%;
+	}
+	.footer-col div {
+		border: 1px solid #eee;
+		border-radius: 5px;
+		background: #fafafa;
+		min-height: 85px;
+		padding: 25px;
+	}
+	.footer-col div:hover {
+		background: #eee;
+	}
+}

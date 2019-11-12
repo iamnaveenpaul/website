@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ixkaito/frasco.git"
+    "url": "https://github.com/grivaschool/frasco.git"
   },
   "keywords": [
     "Autoprefixer",
@@ -33,9 +33,9 @@
   "author": "Kite",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ixkaito/frasco/issues"
+    "url": "https://github.com/grivaschool/frasco/issues"
   },
-  "homepage": "https://ixkaito.github.io/frasco",
+  "homepage": "https://grivaschool.github.io/frasco",
   "devDependencies": {
     "autoprefixer": "^9.0.1",
     "babel-core": "^6.26.3",

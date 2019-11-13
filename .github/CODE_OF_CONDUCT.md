@@ -66,10 +66,10 @@ Once the maintainers get involved, they will follow a documented series of steps
 You may get in touch with the maintainer team through any of the following methods:
 
   * Through email:
-    * [me@daviddarnes.com](mailto:me@daviddarnes.com) (David Darnes)
+    * [hello@griva.in](mailto:hello@griva.in) (Griva School of Coding)
 
   * Through Twitter:
-    * [@DavidDarnes](https://twitter.com/DavidDarnes) (David Darnes)
+    * [@GrivaSchoolOfCoding](https://twitter.com/GrivaSchoolOfCoding) (Griva School of Coding)
 
 ### Further Enforcement
 

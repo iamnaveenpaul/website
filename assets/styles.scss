@@ -9,6 +9,14 @@ styles: true
   width: 100px;
 }
 
+.typeset pre {
+  overflow-x: auto;
+}
+
+.typeset code, .typeset pre {
+  background-color: #efefef;
+}
+
 .feature {
   background: #fff;
 

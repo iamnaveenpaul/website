@@ -1,7 +1,7 @@
 ---
 title: Evereything you should know about JS variables
 image: "/assets/default-social-image.png"
-cateogories: Naveen_Paul
+categories: Naveen_Paul
 ---
 
 **Front Matter**

@@ -26,7 +26,7 @@ In JavaScript, a primitive (primitive value, primitive data type) is data that i
 
 Represents the intentional absence of any object value — MDN
 
-Null is like something when we typically say ‘it has no value’.
+`null` is like something when we typically say ‘it has no value’.
 
 In JS, if a variable has no value, it is ‘null’. It is used when something returning from a function doesn’t yield any results.
 
@@ -38,11 +38,11 @@ function return3 (value) {
 return3(2) // null
 ```
 
-If we don’t specify to return the value as ‘null’, it would return ‘undefined’
+If we don’t specify to return the value as `null`, it would return `undefined`
 
 **undefined**
 
-Defines a variable which has no value. The JS knows that the variable exists, but it has no value. The null is different in the sense that it is a defined value, whereas undefined is not. check [this out](https://codeburst.io/javascript-null-vs-undefined-20f955215a2) for further details.
+Defines a variable which has no value. The JS knows that the variable exists, but it has no value. The `null` is different in the sense that it is a defined value, whereas `undefined` is not. check [this out](https://codeburst.io/javascript-null-vs-undefined-20f955215a2) for further details.
 
 ```
 let b;
@@ -97,15 +97,15 @@ Are unique Identifiers and no two symbols will ever be the same. In large data s
 
 **undeclared**
 
-A variable you want to access isn’t available in the scope. The error shown is ‘ReferenceError: x is not defined’.
+A variable you want to access isn’t available in the scope. The error shown is `ReferenceError: x is not defined`.
 
 **Declaring variables**
 
-var, let and const are the three different ways to declare a variable in Javascript.
+`var`, `let` and `const` are the three different ways to declare a variable in Javascript.
 
 **var vs const vs let**
 
-Note: const and let are now standardized into the JS Spec.
+Note: `const` and `let` are now standardized into the JS Spec.
 
 **var**
 
@@ -130,11 +130,11 @@ scope.
 
 1. I don’t trust anyone
 
-This signifies to use const first for every variable, If a situation arises where it’s needed to change already declared variable, change it to let.
+This signifies to use `const` first for every variable, If a situation arises where it’s needed to change already declared variable, change it to `let`.
 
 1. I trust myself
 
-This signifies to use let for everything, If a situation arises where it’s needed to make sure that the already declared variable can’t be changed, change it to const.
+This signifies to use `let` for everything, If a situation arises where it’s needed to make sure that the already declared variable can’t be changed, change it to `const`.
 
 Point here is to not use var anymore, there might be some cases of incompatibility but it is 94% globally compatible with browsers.
 
@@ -147,18 +147,18 @@ let threeString = "3";
 let threeNum = 3;
 ```
 
-Now the first one is string and the other, a number. But:
+Now the first one is `string` and the other, a `number`. But:
 
 `let sum = threeString + threeNum`
 
-..doesn’t returns any error. The JS thinks that adding the two is the best idea, so it will do the math, that’s coercion. But for some cases, you might wanna keep the string stick to what it always is. Check out
+..doesn’t returns any error. The JS thinks that adding the two is the best idea, so it will do the math, by coercion of `threeString`. But for some cases, you might wanna keep the string stick to what it always is. Check out
 [this article](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/) for more.
 
 **Scope**
 
 Scope in Javascript refers to the current context of execution. - MDN
 
-Its meaning depends upon whether we are talking about the old var or the new const/let. There are two scopes: global and local.
+Its meaning depends upon whether we are talking about the old `var` or the new `const`/`let`. There are two scopes: global and local.
 
 **Global**
 
@@ -177,11 +177,11 @@ function someFunction() {
 
 **Local**
 
-Local scope depends on weather we use var or let/const.
+Local scope depends on weather we use `var` or `let`/`const`.
 
 **var (functional scope)**
 
-If called within a function, then it is available anywhere in that function.
+If `var` is called within a function, then it is available anywhere in that function.
 
 ```
 function someFunction() {
@@ -193,11 +193,11 @@ function someFunction() {
 }
 ```
 
-As long as var is within a function, it’s available to be called.
+As long as `var` is within a function, it’s available to be called.
 
 **let and const (block scope)**
 
-The new let and const are block scoped which means they are only accessible within the block.
+The new `let` and `const` are block scoped which means they are only accessible within the block.
 
 Examples are: if/switch statements, for/while loops. Or, read [this article](https://dev.to/sandy8111112004/javascript-introduction-to-scope-function-scope-block-scope-d11):
 
@@ -223,7 +223,7 @@ Or simply:
 
 all declarations, both variables and functions, are processed first, before any part of your code is executed. — Kyle Simpson
 
-When a var statement is hoisted to the top of the context, it is assigned an undefined value.
+When a `var` statement is hoisted to the top of the context, it is assigned an `undefined` value.
 
 ```
 hoistedVar = "I've been hoisted!";
@@ -231,13 +231,13 @@ var hoistedVar;
 console.log(hoistedVar) // I've been hoisted!
 ```
 
-Using Tyler McGinnis [Javascript Visualizer](https://tylermcginnis.com/javascript-visualizer/)! you can see that as both variables are given an undefined value first. The compiler then assigns “I’ve been Hoisted” to any value it parses during the execution of the code.
+Using Tyler McGinnis [Javascript Visualizer](https://tylermcginnis.com/javascript-visualizer/)! you can see that as both variables are given an `undefined` value first. The compiler then assigns “I’ve been Hoisted” to any value it parses during the execution of the code.
 
 **Let and Const Caveat**
 
-let and const are hoisted in a different way than var. Var, when hoisted is initialized as undefined.
+`let` and `const` are hoisted in a different way than `var`. `var`, when hoisted is initialized as `undefined`.
 
-let/const remain uninitialized until the compiler evaluates the statement.
+`let`/`const` remain uninitialized until the compiler evaluates the statement. Thanks to this information [here](https://stackoverflow.com/questions/31219420/are-variables-declared-with-let-or-const-not-hoisted-in-es6).
 
 Using the same example:
 
@@ -311,11 +311,11 @@ Now that you know where you could access it and know if able to change it or not
 
 **Naming it what it is**
 
-It sounds simple, but to think what exact information is going to be assigned to this variable and how will the variable help me. Try to avoid single characters like p, i, e and use whole meaningful names, and a good text editor is always there for you to autocomplete.
+It sounds simple, but to think what exact information is going to be assigned to this variable and how will the variable help me. Try to avoid single characters like `p`, `i`, `e` and use whole meaningful names, and a good text editor is always there for you to autocomplete.
 
 **Reserved Words**
 
-Note that there are some reserved words in JS, like var, boolean, abstract. Check them all [here](https://www.w3schools.com/js/js_reserved.asp).
+Note that there are some reserved words in JS, like `var`, `boolean`, `abstract`. Check them all [here](https://www.w3schools.com/js/js_reserved.asp).
 
 **Final Thoughts**
 

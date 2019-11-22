@@ -18,7 +18,7 @@ If you learn through the post, hopefully at the end of it, you will get a clear 
 
 ‘JavaScript is the most popular language among developers successively for 6 years and around two-thirds of them have used the language in the past year.’
 
--src: 2018’s Developer survey of Stack Overflow.
+-src: [2018’s Developer survey of Stack Overflow](https://insights.stackoverflow.com/survey/2018).
 
 There should be no doubt about JavaScript being one of the best and most popular programming languages till date, and undoubtedly the same for future dates ahead. It’s hard to imagine the line of industry where no JavaScript is used and it even seems impossible to imagine it without being used in the future. Having said that, you can’t be a better software developer without learning the basics of the language, and the software development seems impossible without it.
 
@@ -42,7 +42,7 @@ The first thing that comes to mind when you see the word ‘software engineer’
 
 A programming language by Sun Microsystems for more than 20 years. It’s powerful, easy to learn, object-oriented, independent of the hardware architecture and platform and you can compile and code into any machine language with JVM (Java Virtual Machine), where you can write the code once, and be able to run it anywhere. The JVM is Platform dependent that compiles the code into the low level machine code, so has a good cross platform capability.
 
-It is used in the world’s most popular mobile operating system, The Android. The app development of Android is so vast because of its popularity that around 90% fortune 500 companies opted for making a variety of back-end applications. The Amazon web Services and Windows Azure is run by the Java data processing done by Apache Hadoop.
+It is used in the world’s most popular mobile operating system, The Android. The app development of Android is so vast because of its popularity that around [90% fortune 500 companies](https://www.zipcodewilmington.com/blog/why-java-skills-matter-now-and-in-the-future) opted for making a variety of back-end applications. The Amazon web Services and Windows Azure is run by the Java data processing done by Apache Hadoop.
 
 With such business industry at an immense interest for java applications that around 3 billion devices were already running on Java across all cross platforms 5 years ago, you can take the word that this language is all time favourite for beginners.
 

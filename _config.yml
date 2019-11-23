@@ -64,7 +64,7 @@ timezone: Asia/Kolkata # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Prorgramming Tutorials # Needed for Siteleaf
+    title: Programming Tutorials # Needed for Siteleaf
     output: true
     description: "Learn NodeJS, JavaScript, Java, Express Js, Angular Js/ Angular 6/7/8, React Js" # The post list page content
 #    feature_text: |

@@ -1,7 +1,7 @@
 ---
 title: Evereything you should know about JS variables
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: javascript-variables
 ---
 
 **Front Matter**

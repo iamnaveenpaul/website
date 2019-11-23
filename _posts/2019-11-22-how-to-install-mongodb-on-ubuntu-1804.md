@@ -1,7 +1,7 @@
 ---
 title: How to Install MongoDB on Ubuntu 18.04
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: mongodb-ubuntu
 ---
 
 **Introduction**

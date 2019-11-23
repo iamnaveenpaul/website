@@ -1,7 +1,7 @@
 ---
 title: Top 10 Programming Languages of the World – 2019
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: programming-languages
 ---
 
 **Top 10 Programming Languages of the World – 2019**

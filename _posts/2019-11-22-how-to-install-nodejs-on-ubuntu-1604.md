@@ -1,7 +1,7 @@
 ---
 title: How To Install Node.js on Ubuntu 16.04
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: nodejs-ubuntu
 ---
 
 **Introduction**

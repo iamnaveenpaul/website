@@ -1,7 +1,7 @@
 ---
 title: How to set up Node.js on Windows 10
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: nodejs-windows
 ---
 
 **In this article, I will show how to set up Node.js on windows 10**

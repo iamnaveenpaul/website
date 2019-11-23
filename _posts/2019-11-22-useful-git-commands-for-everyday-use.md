@@ -1,7 +1,7 @@
 ---
 title: Useful git commands for everyday use!
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: git-commands
 ---
 
 Lemme tell my experience. To execute certain actions with git, I’ve Googled a lot and came to this conclusion that it isn’t effective, rather it actually slowed me down a lot. I’ve noticed that the questions about git get the most views on [StackOverflow](https://stackoverflow.com/tags/git). There are some actions that we use a lot in git, so it’s a good thing to learn them, you have to discover it yourselves but I am going to help you a li’l bit in this regard where I learned from the internet, my friends and colleagues. Hope you find this tutorial useful.

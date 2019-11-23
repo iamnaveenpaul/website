@@ -2,7 +2,7 @@
 title: How to build chat app with Node.js & Socket.io
 image: https://picsum.photos/2560/600?image=733
 categories:
-- Naveen_Paul
+- node.js-socket.io
 ---
 
 It’s not an easy job to learn socket.io with node js at the same time, one reason to add is when someone who is trying to learn node js or is at an amateur level at it, he would be more likely interested in trying out all the features that the socket.io provide, also when someone is not familiar with the node.js, it’s protocol for WebSockets is left for himself to borrow it from random snippets of the code. 

@@ -1,7 +1,7 @@
 ---
 title: Installing MongoDB on Windows
 image: "/assets/default-social-image.png"
-categories: Naveen_Paul
+categories: mongodb-windows
 ---
 
 **What’s MongoDB?**

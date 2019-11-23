@@ -1,7 +1,7 @@
 ---
 title: Top 10 Reasons to Learn Java
 image: "/assets/default-social-image.png"
-categories: learn-java
+categories: Java
 ---
 
 **What is Java?**

@@ -1,7 +1,7 @@
 ---
 title: Why learn MEAN Stack?
 image: "/assets/default-social-image.png"
-categories: learn-meanstack
+categories: MEAN-stack
 ---
 
 As JavaScript is popular and widely used. There’s no doubt that the online course platforms (like Khan Academy) and more and more coding bootcamps are switching to Javascript as their language of instruction.

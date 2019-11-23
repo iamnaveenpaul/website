@@ -2,7 +2,7 @@
 title: The 3 Types of Design Patterns All Developers Should Know (with code examples
   of each)
 image: "/assets/default-social-image.png"
-categories: programming-design-patterns
+categories: Design-patterns
 ---
 
 The 3 Types of Design Patterns All Developers Should Know (with code examples of each)

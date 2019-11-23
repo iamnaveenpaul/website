@@ -1,7 +1,7 @@
 ---
 title: Database Comparison - SQL vs. NoSQL (MySQL vs PostgreSQL vs Redis vs MongoDB)
 image: "/assets/default-social-image.png"
-categories: database-comparison
+categories: Database-Comparison
 ---
 
 I've recently carried out a number of database operations that took hours or days to complete that forced me to look for a new, better alternative to my current database engine. To help myself out, based on the performance of the database, I sought to find a comparison, but couldn't find anything suitable. That's when I decided to make a small comparison of my own.

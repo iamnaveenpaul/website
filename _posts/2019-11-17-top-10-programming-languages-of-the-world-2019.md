@@ -1,7 +1,7 @@
 ---
 title: Top 10 Programming Languages of the World – 2019
 image: "/assets/default-social-image.png"
-categories: programming-languages
+categories: Programming-languages
 ---
 
 **Top 10 Programming Languages of the World – 2019**

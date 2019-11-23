@@ -1,7 +1,7 @@
 ---
 title: Seven tips for technical interview
 image: "/assets/default-social-image.png"
-categories: technical-interview
+categories: Technical-interview
 ---
 
 I completed my graduation from PES Bangalore in 2015, I had no experience for programming at the industry level nor I was employed in one. It was time to hunt for jobs and It had been quite a lot of struggling and a bit stressful for me, after 30 days of searching in March, I was employed as a full stack engineer in a startup company called Relatas and secured my job permanently there in July.

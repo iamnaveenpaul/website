@@ -1,7 +1,7 @@
 ---
 title: Top 10 full stack development tools
 image: "/assets/default-social-image.png"
-categories: fullstack-tools
+categories: Full-stack
 ---
 
 In India, there is a great demand for Full Stack company that caters its need to an outsourcing company to meet its demands, for both the front end and the back end development to achieve its company’s financial and business goals. The outsourcing business companies have options to create their own sites or hire a web developer to make their online presence as they want to provide their customers with amazing and better software solutions, and this is an important factor as more and more people in India are moving into a virtual world. So, it’s wise to invest in this full stack offshore development company, but as the tools increases almost daily as per the needs of the business, finding such best tool can be a difficult job. There are essential tools out there and some of the best are listed below in brief:

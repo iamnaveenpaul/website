@@ -1,7 +1,7 @@
 ---
 title: Running NodeJS on Linux on Windows (with no VM)
 image: "/assets/default-social-image.png"
-categories: nodejs-linuxwindows
+categories: Nodejs-Windows
 ---
 
 Hello [Windows](https://hackernoon.com/tagged/windows) using web developers, now you can run [Linux](https://hackernoon.com/tagged/linux) Bash in Windows and get `emacs` and `vi` and `ssh` as well as anything else that could float your boat. In your dream little black window right there.

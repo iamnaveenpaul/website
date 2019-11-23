@@ -1,6 +1,6 @@
 ---
-image: "/assets/default-social-image.png"
 title: Why learn MEAN Stack?
+image: "/assets/default-social-image.png"
 categories: Naveen_Paul
 ---
 
@@ -16,7 +16,7 @@ But do you know the reason for any startup founder looking most often for a MEAN
 
 As we can see in this chart, Node.js is the clear cut winner in terms of job growth by a large extent.
 
-Some data driven points from indeed.com on why MEAN STACK has become so popular?
+Some data driven points from [indeed.com](http://indeed.com/) on why MEAN STACK has become so popular?
 
 * Node.js & Express.js are the basic essential elements of web development framework that powers the MEAN Stack. Node.js was released less than 8 years ago, but it’s already been adopted by Microsoft, Linkedin, Walmart, SAP and many others. 
 * MongoDB , It’s the Database that the MEAN Stack uses. Mongo is also popular with the Rails apps, and is the default database for the Meteor.js project.

@@ -1,7 +1,7 @@
 ---
+title: Installing MongoDB on Windows
 image: "/assets/default-social-image.png"
 categories: Naveen_Paul
-title: Installing MongoDB on Windows
 ---
 
 **What’s MongoDB?**
@@ -16,9 +16,9 @@ You should be familiar with the Windows command prompt.
 
 **Installing and Running MongoDB on a Windows Machine**
 
-Download the installer file from the downloads section.
+Download the installer file from the [downloads section](https://www.mongodb.org/downloads#production).
 
-* Double click the downloaded .msi file in the Windows Explorer and install Mongo by following the prompts. By default, Mongo is most probably in the C:\mongodb directory, unless you specify manually. However, it’s actually based on the settings of your machine, for example, C:\Program Files\MongoDB\Server\3.2. Also, you will find MongoDB in the add/remove programs section. 
-* Create the directory for storing MongoDB files. Run md \data\db from the command prompt which would be the default location but using the --dbpath parameter other locations can also be specified using the --dbpath parameter. For more information, refer the Mongo docs.
-* run C:\mongodb\bin\mongod.exe in the Command Prompt or C:\path\to\mongodb\bin\mongod.exe to start the mongodb daemon.
-* While the MongoDB daemon is running, run C:\mongodb\bin\mongo.exe from a different Command prompt window to connect to MongoDB using the Mongo shell.
+* Double click the downloaded .msi file in the Windows Explorer and install Mongo by following the prompts. By default, Mongo is most probably in the `C:\mongodb` directory, unless you specify manually. However, it’s actually based on the settings of your machine, for example, `C:\Program Files\MongoDB\Server\3.2`. Also, you will find MongoDB in the add/remove programs section. 
+* Create the directory for storing MongoDB files. Run `md \data\db` from the command prompt which would be the default location but using the --dbpath parameter other locations can also be specified using the `--dbpath` parameter. For more information, refer the [Mongo docs](https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-windows/#set-up-the-mongodb-environment).
+* run `C:\mongodb\bin\mongod.exe` in the Command Prompt or `C:\path\to\mongodb\bin\mongod.exe` to start the mongodb daemon.
+* While the MongoDB daemon is running, run `C:\mongodb\bin\mongo.exe` from a different Command prompt window to connect to MongoDB using the Mongo shell.

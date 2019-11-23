@@ -1,15 +1,15 @@
 ---
-image: "/assets/default-social-image.png"
-categories: Naveen_Paul
 title: The 3 Types of Design Patterns All Developers Should Know (with code examples
   of each)
+image: "/assets/default-social-image.png"
+categories: Naveen_Paul
 ---
 
 The 3 Types of Design Patterns All Developers Should Know (with code examples of each)
 
 **What is a Design Pattern?**
 
-Design trends are model level approaches that we software engineers frequently encounter for recurring problems. It's not code, remember what I said, ‘It’s not a code’. It's like an overview of how to deal with these issues and how to model a solution.
+Design trends are model level approaches that we software engineers frequently encounter for recurring problems. It's not code, always remember what I said, ‘It’s not a code’. It's like an overview of how to deal with these issues and how to model a solution.
 
 Following such patterns is considered good practice, as the solution layout is thoroughly tried and tested, resulting in the final code being more readable. OOP Languages produces and uses design patterns quite often, such as Java, in which most of the examples will be written from here on.
 
@@ -26,7 +26,7 @@ We will go through one basic design pattern for each categorized type in this ar
 
 **Type 1: Creational - The Singleton Design Pattern**
 
-The Singleton Design Pattern is a Creational pattern whose goal is to provide only one global point of access to that object and create only one instance of a class. an example of such a Java class is a Calendar, where you can't make the class as an instance. It also gets the object by using its own method of getInstance().
+The Singleton Design Pattern is a Creational pattern whose goal is to provide only one global point of access to that object and create only one instance of a class. an example of such a Java class is a Calendar, where you can't make the class as an instance. It also gets the object by using its own method of `getInstance()`.
 
 A singleton design pattern used by a class will include,
 
@@ -63,7 +63,7 @@ This type of instantiation occurs during class loading, as variable instance ins
 
 **Lazy Days ?**
 
-There is little change from the above-mentioned implementation. The main differences are that the static variable is initially declared null and is instantiated within the getInstance() method if-and only if-the instance variable remains null at the time of the test.
+There is little change from the above-mentioned implementation. The main differences are that the static variable is initially declared null and is instantiated within the `getInstance()` method if-and only if-the instance variable remains null at the time of the test.
 
 ```
 public class LazySingleton {
@@ -111,9 +111,9 @@ public class ThreadSafeSingleton {
 
 The synchronized approach overhead is high, decreasing the entire operation's efficiency.
 
-For example, the synchronized method is run and the output drops every time any user accesses the getInstance() function if the instance variable has already been instantiated. This only happens to test if the value of the instance variables is zero. It leaves the process if it finds so.
+For example, the `synchronized` method is run and the performance drops every time any user accesses the `getInstance()` function if the instance variable has already been instantiated. This only happens to test if the value of the `instance` variable is null. It leaves the process if it finds so.
 
-Double locking is used to reduce this overhead. The test is also used before the synchronized method, and the method runs if the value is zero alone.
+Double locking is used to reduce this overhead. The test is also used before the `synchronized` method, and the method runs if the value is null alone.
 
 ```
 // double locking is used to reduce the overhead of the synchronized method
@@ -418,4 +418,4 @@ In this post we went through:
 
 I hope this is going to be helpful in the end.
 
-Find the code repo for the post, here.
+Find the code repo for the post, [here](https://github.com/samsam-026/Design_Patterns).

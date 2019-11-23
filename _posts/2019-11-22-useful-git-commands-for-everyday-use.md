@@ -4,9 +4,9 @@ image: "/assets/default-social-image.png"
 categories: Naveen_Paul
 ---
 
-Lemme tell my experience. To execute certain actions with git, I’ve Googled a lot and came to this conclusion that it isn’t effective, rather it actually slowed me down a lot. I’ve noticed that the questions about git get the most views on StackOverflow. There are some actions that we use a lot in git, so it’s a good thing to learn them, you have to discover it yourselves but I am going to help you a li’l bit in this regard where I learned from the internet, my friends and colleagues. Hope you find this tutorial useful.
+Lemme tell my experience. To execute certain actions with git, I’ve Googled a lot and came to this conclusion that it isn’t effective, rather it actually slowed me down a lot. I’ve noticed that the questions about git get the most views on [StackOverflow](https://stackoverflow.com/tags/git). There are some actions that we use a lot in git, so it’s a good thing to learn them, you have to discover it yourselves but I am going to help you a li’l bit in this regard where I learned from the internet, my friends and colleagues. Hope you find this tutorial useful.
 
-Before I begin, please check the git --version on your machine, I use 2.12.2 in macOS, so it is recommended that you have this version or higher. Here is the official documentation of git where you can read the details about git commands, parameters and new versions.
+Before I begin, please check the `git --version` on your machine, I use `2.12.2` in macOS, so it is recommended that you have this version or higher. [Here](https://git-scm.com/) is the official documentation of git where you can read the details about git commands, parameters and new versions.
 
 **Table of Contents**
 
@@ -220,7 +220,7 @@ git commit --amend --no-edit
 git commit --amend -m "New commit message"
 ```
 
-Checkout Changing git commit message after push:
+[This](http://stackoverflow.com/questions/8981194/changing-git-commit-message-after-push-given-that-no-one-pulled-from-remote) is changing git commit message after push:
 
 ```
 git commit --amend -m "New commit message"
@@ -374,18 +374,17 @@ git bisect good
 git bisect bad
 ```
 
-Git alias
+**Git alias**
 
-Consider using git alias if there are commands which you use a lot. You can just type git st for making alias for git 
-status:
+Consider using git alias if there are commands which you use a lot. You can just type `git st` for making alias for `git status`:
 
 `git config — global alias.st status`
 
-You can learn some aliases from thoughtbot and mathiasbynens. The configurations here are stored in .gitconfig file.
+You can learn some aliases from [thoughtbot](https://github.com/thoughtbot/dotfiles/blob/master/gitconfig) and [mathiasbynens](https://github.com/mathiasbynens/dotfiles/blob/master/.gitconfig). The configurations here are stored in `.gitconfig` file.
 
 **GUI clients**
 
-It’s cool and faster for doing things in command line. To view branches and commits however it’s more comfortable and visualizing to use a GUI client. There are list of all GUI clients here, I basically use SourceTree.
+It’s cool and faster for doing things in command line. To view branches and commits however it’s more comfortable and visualizing to use a GUI client. There are list of all GUI clients [here](https://git-scm.com/download/gui/mac), I basically use [SourceTree](https://www.sourcetreeapp.com/).
 
 Check before you commit
 
@@ -393,9 +392,9 @@ I usually mark my experiment with `// <TEST>` because we don’t want the experi
 
 Git has improvement on its commit hook for using hookspath makes itself globally, with 2.9 onwards.
 
-First, we need to create a file pre-commit, and place it into, say as an example, /Users/khoa/hooks:
+First, we need to create a file `pre-commit`, and place it into, say as an example, `/Users/khoa/hooks`:
 
-Then,, run git config core.hooksPath /Users/khoa/hooks in your project.
+Then, run `git config core.hooksPath /Users/khoa/hooks` in your project.
 
 Git won’t let you commit, when you want to commit with that pattern. Check the following once, to make this work in SourceTree: SourceTree and pre commit hook
 
@@ -403,17 +402,18 @@ Git won’t let you commit, when you want to commit with that pattern. Check the
 
 This is just a top pile of a big heap on what git can do but if you want to learn more, check out the following links.
 
-* Atlassian Git Tutorial: overview of how to set up a repository (repo) under Git version control git-cheat-sheet: Git cheat sheet saves you from learning all the commands by heart. 
-* Learn Enough Git to Be Dangerous 
-* Git Workflows for Pros: A Good Git Guide
-* Git from the inside out: The essay focuses on the graph structure that underpins Git 
-* git-game: terminal game to test git skills
-* Introduction to Git — talk by Scott Chacon 
-* Git Tutorial — Git Fu With The Command Line
-* Git Immersion: The surest path to mastering Git is to immerse oneself in its utilities and operations, to experience it first-hand 
-* git-flight-rules Flight rules for git
-* gitflow Git extensions to provide high-level repository operations for Vincent Driessen’s branching model
-* diff-so-fancy Good-lookin’ diffs with diff-highlight and more
-* github-cheat-sheet A list of cool features of Git and GitHub
-* git tips Most commonly used git tips and tricks
-* Little Things I Like to Do with Git
+* [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/setting-up-a-repository): overview of how to set up a repository (repo) under Git version control
+* [git-cheat-sheet](https://github.com/arslanbilal/git-cheat-sheet): Git cheat sheet saves you from learning all the commands by heart. 
+* [Learn Enough Git to Be Dangerous](http://www.learnenough.com/git-tutorial) 
+* [Git Workflows for Pros: A Good Git Guide](http://www.toptal.com/git/git-workflows-for-pros-a-good-git-guide)
+* [Git from the inside out](https://codewords.recurse.com/issues/two/git-from-the-inside-out): The essay focuses on the graph structure that underpins Git 
+* [git-game](https://github.com/git-game/git-game): terminal game to test git skills
+* [Introduction to Git](https://www.youtube.com/watch?v=xbLVvrb2-fY) — talk by Scott Chacon 
+* [Git Tutorial — Git Fu With The Command Line](http://www.raywenderlich.com/74258/git-tutorial-intermediate)
+* [Git Immersion](http://gitimmersion.com/): The surest path to mastering Git is to immerse oneself in its utilities and operations, to experience it first-hand 
+* [git-flight-rules](https://github.com/k88hudson/git-flight-rules): Flight rules for git
+* [gitflow](https://github.com/nvie/gitflow): Git extensions to provide high-level repository operations for Vincent Driessen’s branching model
+* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy): Good-lookin’ diffs with diff-highlight and more
+* [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet): A list of cool features of Git and GitHub
+* [git tips](https://github.com/git-tips/tips): Most commonly used git tips and tricks
+* [Little Things I Like to Do with Git](https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/)

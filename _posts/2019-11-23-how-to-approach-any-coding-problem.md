@@ -1,7 +1,7 @@
 ---
 title: How to approach any coding problem?
 image: "/assets/default-social-image.png"
-categories: Coding_approach
+categories: Coding-approach
 ---
 
 Most people follow certain predefined steps through basic instincts that allow them to effectively solve a coding problem. You might even follow some of these steps knowingly or not, when you are unconsciously asked a question, but you will try to relate to these incredible steps and you will be able to solve the problem more effectively, after reading this article.

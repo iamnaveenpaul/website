@@ -1,7 +1,7 @@
 ---
 title: 10 Node Frameworks to Use in 2019
 image: "/assets/default-social-image.png"
-categories: Node_frameworks
+categories: Node-frameworks
 ---
 
 To build more applications especially for the web, more developers have switched to using JavaScript. To promote the rapid prototyping and development of awesome projects, this has resulted in an exponential growth in the use of frameworks specifically built for the JavaScript community.

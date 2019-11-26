@@ -1,6 +1,6 @@
 ---
-image: "/assets/default-social-image.png"
 title: The Ultimate Guide to Preparing for the Coding Interview
+image: "/assets/default-social-image.png"
 categories: Technical-interview
 ---
 
@@ -44,30 +44,30 @@ Here are some "conceptual questions" explanations for the different languages we
 
 **Algorithms and Data Structures (Max 45 minutes)**
 
-https://www.geeksforgeeks.org/commonly-asked-algorithm-interview-questions-set-1/
-https://www.geeksforgeeks.org/commonly-asked-data-...
+[https://www.geeksforgeeks.org/commonly-asked-algorithm-interview-questions-set-1/](https://www.geeksforgeeks.org/commonly-asked-algorithm-interview-questions-set-1/)
+[https://www.geeksforgeeks.org/commonly-asked-data-...](https://www.geeksforgeeks.org/commonly-asked-data-structure-interview-questions-set-1/)
 
 **Ruby & Rails (Max. 45 minutes)**
 
-https://www.toptal.com/ruby/interview-questions/
-https://www.upwork.com/i/interview-questions/ruby/
-https://rubygarage.org/blog/how-to-interview-your-ruby-on-rails-developer
+[https://www.toptal.com/ruby/interview-questions/](https://www.toptal.com/ruby/interview-questions/)
+[https://www.upwork.com/i/interview-questions/ruby/](https://www.upwork.com/i/interview-questions/ruby/)
+[https://rubygarage.org/blog/how-to-interview-your-ruby-on-rails-developer](https://rubygarage.org/blog/how-to-interview-your-ruby-on-rails-developer)
 
 **HTML & CSS (Max. 45 minutes)**
 
-https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/css-questions.md
-https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/html-questions.m
+[https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/css-questions.md](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/css-questions.md)
+[https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/html-questions.m](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/html-questions.md)
 
 **JavaScript (Max. 45 minutes)**
 
-https://www.toptal.com/javascript/interview-questi...
-https://www.codementor.io/nihantanu/21-essential-j...
-https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md
+[https://www.toptal.com/javascript/interview-questi...](https://www.toptal.com/javascript/interview-questions)
+[https://www.codementor.io/nihantanu/21-essential-j...](https://www.codementor.io/nihantanu/21-essential-javascript-tech-interview-practice-questions-answers-du107p62z)
+[https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md](https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md)
 
 **React (Max. 45 minutes)**
 
-https://www.edureka.co/blog/interview-questions/react-interview-questions/
-https://www.toptal.com/react/interview-questions
+[https://www.edureka.co/blog/interview-questions/react-interview-questions/](https://www.edureka.co/blog/interview-questions/react-interview-questions/)
+[https://www.toptal.com/react/interview-questions](https://www.toptal.com/react/interview-questions)
 
 Set a limit of 45 minutes for each set of questions to render this job a little more endurable. Feel free to spend some time working together with a partner on these issues. You should take turns to respond and clarify each other's responses.
 

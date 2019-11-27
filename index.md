@@ -7,6 +7,14 @@ feature_text: |
 
 feature_image: "https://picsum.photos/1300/400?image=989"
 
+allCourse:
+    <h3 id="column-1">Column 1</h3>
+    <p>Lorem ipsum dolor..</p>
+    <h3 id="column-2">Column 2</h3>
+    <p>Lorem ipsum dolor..</p>
+    <h3 id="column-3">Column 3</h3>
+    <p>Lorem ipsum dolor..</p>
+
 plans:
   ### Courses Offered 
   <table>

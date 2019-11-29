@@ -2,18 +2,10 @@
 title: Griva School of Coding | Learn MEAN stack, JavaScript, NodeJs, MongoDb, Express Js, Java, SpringBoot, Angular, Angular Js, React Js in Bangalore
 feature_text: |
   # FAST TRACK YOUR TECH CAREER
-  Griva School of Coding is a 3 months intensive training program to kickstart your tech career. 
+  Griva School of Coding in Bangalore is a 1-3 months intensive software development training programmes designed to kickstart your tech career. 
   One-on-one mentoring and training by experienced, working professionals from top IT companies in the world.
 
 feature_image: "https://picsum.photos/1300/400?image=989"
-
-allCourse:
-    <h3 id="column-1">Column 1</h3>
-    <p>Lorem ipsum dolor..</p>
-    <h3 id="column-2">Column 2</h3>
-    <p>Lorem ipsum dolor..</p>
-    <h3 id="column-3">Column 3</h3>
-    <p>Lorem ipsum dolor..</p>
 
 plans:
   ### Courses Offered 

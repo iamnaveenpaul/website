@@ -297,8 +297,9 @@ Now we've gone through a few fundamentals of JavaScript, let's add some cool fea
 In this section, using some more DOM API features, we will add an additional image to our site, using some JavaScript to switch between the two when clicking on the image.
 
 1. First of all, consider another image on your page that you would like to feature. Make sure it's the same size as or as close as possible to the first image
-2. 1. Save this image in your `images` folder and rename the image to firefox2.png.
+2. Save this image in your `images` folder and rename the image to firefox2.png.
 3. Go to your `main.js` file and enter the JavaScript below. (If there's already your "Hello world!" JavaScript, remove it.)
+4. Save all files in your browser and launch `index.html`. Now, when you click on the image the other image should be changed with original!
 
 ```
 let myImage = document.querySelector('img');
@@ -313,14 +314,13 @@ myImage.onclick = function() {
 }
 ```
 
-4. Save all files in your browser and launch `index.html`. Now, when you click on the image the other image should be changed with original!
-
 In the `myImage` variable you store a reference to your `<img>` element Next, you make the `onclick` event handler property of this variable equivalent to a anonymous function. Now, every time you click on this element:
 
 1. You get the value of the `src` attribute of the image.
-2. 1. To test if the `src` value is equal to the path to the original image, you use a conditional:
-1. If this is the case, you adjust the `src` value to the 2nd image path causing the other image to be loaded within the element `<img>`.
-2. 1. If not (meaning it must have changed already), the `src` value flips back to the original path of the image to the original state.
+2. To test if the `src` value is equal to the path to the original image, you use a conditional:
+
+* If this is the case, you adjust the `src` value to the 2nd image path causing the other image to be loaded within the element `<img>`.
+* If not (meaning it must have changed already), the `src` value flips back to the original path of the image to the original state.
 
 **Adding a personalized welcome message**
 

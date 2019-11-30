@@ -16,7 +16,7 @@ For your easy understanding, the list of the most frequently asked CSS interview
 
 Let's Begin!!
 
-**Q #1) What is CSS?**
+**What is CSS?**
 
 CSS outlines the style of an HTML webpage, it's a language in which we can set an HTML webpage's behavior. This explains how to view the HTML data on the computer.
 
@@ -270,113 +270,124 @@ padding-left: 50px;
 
 **What is the use of the Box Model in CSS?**
 
-Answer: In CSS, the box model is a box that binds all the HTML elements and it includes features like margins, border, padding, and the actual content.
+The box model in CSS is a box that binds all elements of HTML and includes features such as margins, border, padding, and actual content.
 
-By using a box model we will get the authority to add the borders all around the elements and we can also define the space between the elements.
+By using a box model we will have the right to insert the borders around the elements and we can also establish the gap between the elements.
 
-Q #22) How can we add icons to the web page?
+**How can we add icons to the web page?**
 
-Answer: We can add icons to the HTML webpage by using an icon library like font-awesome.
+With an icon library such as font-awesome, we could apply icons to the HTML web page.
 
-We have to add the name of the given icon class to any inline HTML element. (<i> or <span>) . Icons in the icon libraries are scalable vectors that can be customized with CSS.
+We must assign to any inline HTML element the name of the specified icon class (`<I>` or` <span>`) Icons are scalable vectors in the icon libraries that can be modified using CSS.
 
-Q #23) What is a CSS pseudo-class?
+**What is a CSS pseudo-class?**
 
-Answer: It is a class that is used to define a special state of an HTML element.
+It is a class used to define an HTML element's special state.
 
-This class can be used by styling an element when a user snooped over it and also it can style an HTML element when it gets the focus.
+The class can be used when a client snooped over it by styling an element and when it gets the attention, it can also style an HTML element
 
+```
 selector:pseudo-class {
 property:value;
 }
-Q #24) Explain the concept of pseudo-elements in CSS.
+```
 
-Answer: It is a feature of CSS which is used to style the given parts of an element.
+**Explain the concept of pseudo-elements in CSS.**
 
-For Example, we can style the first letter or line of an HTML element.
+It is a CSS attribute that is used to style the element's specified pieces.
 
+For example, we may style an HTML element's first letter or line.
+
+```
 selector::pseudo-element {
 property:value;
 }
-Q #25) What is CSS opacity?
+```
 
-Answer: It is the property that elaborates on the transparency of an element.
+**What is CSS opacity?**
 
-By this property, we can transparent the image that can take the values from 0.0-1.0, if the value is lower then the image is more transparent. IE8 and earlier versions of the browser can take the values from 0-100.
+It is the property which elaborates on the element's transparency
 
+By this property, the image that can take the values from 0.0-1.0 can be transparent, if the value is lower, then the image becomes more transparent. The values of IE8 and earlier browser versions can range from 0-100.
+
+```
 img {
 opacity: 0.6;
 filter: alpha(opacity=60); /* For IE8 and earlier */}
-Q #26) Write all the position states used in CSS.
+```
 
-Answer: In CSS, there are four position states as stated below:
+**Write all the position states used in CSS.**
 
-Static(default)
-Relative
-Fixed
-absolute
-Q #27) What are navigation bars in CSS?
+There are four position states in CSS stated as Static(default), Relative, Fixed and absolute.
 
-Answer: By using navigation bars we can make an ordinary HTML page into a user-specific and more dynamic web page.
+**What are navigation bars in CSS?**
 
-Basically, it is a list of links, hence use of <ul> and <li> elements makes the perfect sense.
+We may transform an ordinary HTML site into a user-specific and more interactive web page by using navigation bars.
 
+Essentially, it is a set of connections, so it makes perfect sense to use `<ul>` and `<li>` components.
+
+```
 ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 }
-Q #28) What are the differences between relative and absolute in CSS?
+```
 
-Answer: The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px then the padding will shift to 10px in the left while absolute is totally relative to the non-static parent.
+**What are the differences between relative and absolute in CSS?**
 
-It means if we write left:10px then the result will be 10px far from the left edge of the parent element.
+The main difference between relative and absolute is that in CSS "relative" is used for the same tag, meaning that if we write the left: 10px then the padding shifts to 10px in the left while the absolute is completely relative to the non-static parent.
 
-Q #29) Define ‘important’ declarations used in CSS.
+If we write left: 10px, it means that the result is 10px away from the parent element's left edge.
 
-Answer: Important declarations are defined as that declaration which is having more importance than the normal declaration.
+**Define ‘important’ declarations used in CSS.**
 
-While executing, these declarations override the declaration which is having less importance.
+The declaration statement that is more important than the normal declaration.
 
-For example, if there are two users Having an important declaration then one of the declarations will override the declaration of another user.
+When conducting, these declarations overpowers the less important declarations.
+
+When two users have an important declaration then one of the declarations can circumvent that user's claim.
 
 For Example:
 
-Body {background: #FF00FF !important; color: blue}
+`Body {background: #FF00FF !important; color: blue}`
 
-In this body background has more weight than the color.
+In this, as compared to the color body, background has more weight.
 
-Q #30) Define different cascading methods that can be used inside the cascading order.
+**Define different cascading methods that can be used inside the cascading order.**
 
-Answer: Cascading order is itself a sorting method that allows many other different sorting methods:
+Cascading order is itself a method of sorting that enables several different methods of sorting:
 
-#1) Sort by origin: There are some rules which can provide the alternate way which can be defined as:
+#1) Sort by Origin: there are some rules that can provide an alternative way to define:
 
-The normal weight of the style sheet of a particular provider will be overridden by the increased weight of the user's style sheet.
-Stylesheet rules of a particular user will be overridden by the normal width of the provider’s style sheet.
-#2) Sort by selector's specificity: Less specific selector is been overridden by the more specific selector.
+The normal weight of a single provider's style sheet will be overridden by the user's elevated style sheet weight.
 
-For example, A Contextual selector is less specific in comparison to the ID selector which is a more specific one and with that contextual selector is been overridden by the ID selector.
+The normal width of the provider's style sheet will override the stylesheet rules of a particular user.
 
-#3) Sort by order specified: This comes in the scenario when the two selectors are the same in weight and the other properties than the specification which will be seen for overriding.
+#2) Sort by selector's specificity: the more precise selector overrides the less common selector.
+
+A Contextual selector, for example, is less precise relative to the more common ID selector, and the ID selector overrides the Contextual selector.
+
+#3) Sort by order specified: This is the case in the situation where the weight and other properties of the two selectors is the same as that of the overriding specification.
 
 Example:
 
-All other styles will be seen overridden if the style attribute is used for inline style.
+If the style parameter is used for inline style, all other types will be overridden.
 
-And also if the link element is used for external style, then it will override the imported style.
+And if the link element is also used for external style the imported style will be overridden.
 
-Q #31) Differentiate between inline and block element.
+**Differentiate between inline and block element.**
 
-Answer: Inline element does not have an element to set width and height and also it does not have the line break.
+Inline element has no element for setting width and height, and it also has no line break.
 
-Example: em, strong, etc.
+Example: em,  strong, etc.
 
 Block element specification:
 
-They do have the line break.
-They define the width by setting a container and also allow setting height.
-It can also contain an element that occurs in the inline element.
+Posses the line break.
+By setting a container, they define the width and also allow height to be set.
+It may also include an element in the inline portion that happens.
+
 Example:
 
 width and height
@@ -385,42 +396,39 @@ min-width and min-height
 hi (i=1-6)- heading element
 p- Paragraph element.
 
-Q #32) How is the concept of inheritance applied in CSS?
+**How is the concept of inheritance applied in CSS?**
 
-Answer: Inheritance is a concept in which the child class will inherit the properties of its parent class.
+Inheritance is a principle in which the child class inherits the parent class property.
 
-It is a concept which is been used in many languages and is the easy way of defining the same property again.
+It is a concept used in many languages and is the easy way to redefine the same property.
 
-It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children's class if the child uses the same name.
+Defining the scale from the top level to the bottom level is used in CSS. If the child uses the same name, inherited property can be overridden by the child's class.
 
 Example:
 
-Body {font-size: 15pt;}
+`Body {font-size: 15pt;}`
 
-And another definition is being defined in the child class
+In the child's class another description is known
 
+```
 Body {font-size: 15pt;}
 H1 {font-size: 18pt;}
+```
 
-All the paragraph text will be displayed using the property and will be defined in the body except for the H1 style which will show the text in font 18 only.
+Using the property, all the paragraph text will be shown and specified in the body except for the H1 type that will only show the text in font 18.
 
-Q #33) Differentiate between the ID and class.
+**Differentiate between the ID and class.**
 
-Answer: Both id and class is been used in HTML and assigns the value from CSS.
+* The Id is a type of element which specifically assigns a name to a particular element, while class has an object with a collection of properties that can be used for the entire block.
+* The Id can be used as an element because it can identify it uniquely, while class is defined as blocking the elements and can be implemented too many tags wherever it is used.
+* Id restricts the use of its property to a specific element while the inheritance is extended to a particular block or set of elements in the class.
 
-Please find below the differences:
+**Conclusion**
 
-The ID is a kind of element which uniquely assigns a name to a particular element whereas class has an element with a certain set of properties that can be used for the complete block.
-The id can be used as an element because it can uniquely identify it whereas class is also defined to block the elements and applies too many tags wherever it is used.
-Id provides the restriction to use its properties to one specific element whereas in class the inheritance is applied to a specific block or group of the element.
-Conclusion
-This interview question and answer list will help you to crack the Web developer interview for fresher as well as experience level. These are the frequent questions asked in the interview.
+This question and answer list of interviews will help you crack the interview of web developers for fresher as well as for the level of experienced ones. I Hope this article has helped you a great deal.
 
-Hope this article will help to crack and face any interview related to CSS for a Web developer.
+**Recommended Reading**
 
-We wish you all the success!!
-
-Recommended Reading
-9 Most Popular CSS Editors for Windows and Mac
-How to Use CSS Selector for Identifying Web Elements for Selenium Scripts – Selenium Tutorial #6
-Top 30+ Popular CSS Interview Questions and Answers
+* [9 Most Popular CSS Editors for Windows and Mac](https://www.softwaretestinghelp.com/css-editors/)
+* [How to Use CSS Selector for Identifying Web Elements for Selenium Scripts – Selenium Tutorial #6](https://www.softwaretestinghelp.com/css-selector-selenium-locator-selenium-tutorial-6/)
+* [Top 30+ Popular CSS Interview Questions and Answers](https://www.softwaretestinghelp.com/css-interview-questions/)

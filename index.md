@@ -5,7 +5,14 @@ feature_text: |
   Griva School of Coding in Bangalore is a 1-3 months intensive software development training programmes designed to kickstart your tech career. 
   One-on-one mentoring and training by experienced, working professionals from top IT companies in the world.
 
+feature_text2: |
+  # You deserve a better Internet. 
+  So we reimagined what a browser should be. 
+  It begins with giving you back power. Get unmatched speed, security and privacy by blocking trackers. Earn rewards by opting into our privacy-respecting ads and help give publishers back their fair share of Internet revenue. 
+
 feature_image: "https://picsum.photos/1300/400?image=989"
+
+
 
 plans:
   ### Courses Offered 

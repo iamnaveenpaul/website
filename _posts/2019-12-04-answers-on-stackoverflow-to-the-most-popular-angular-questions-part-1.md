@@ -450,7 +450,9 @@ and will not show the element.
 
 Only the value `false` or removing the attribute will actually make the element visible.
 
-Using `{{}}` also converts the expression to a string and won't work as expected.
+Using 
+**`{{ }}`**
+ also converts the expression to a string and won't work as expected.
 
 Only binding with `[]` will work as expected because this `false` is assigned as false instead of `"false"`.
 

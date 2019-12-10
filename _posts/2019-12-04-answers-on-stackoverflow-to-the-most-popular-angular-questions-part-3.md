@@ -250,7 +250,7 @@ When trying to loop through the collection in the `*ngFor`, the collection is se
     <h3>Shell</h3><button (click)="toggle()">Toggle!</button>
     
     <div *ngIf="show" *ngFor="let thing of stuff">
-      {{log(thing)}}
+      {{ log(thing) }}
       <span>{{thing.name}}</span>
     </div>
   `

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="368cadd8-28fb-4957-9d21-a9aa69187fad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,9 @@
       <updated>1575609420336</updated>
       <workItem from="1575609429615" duration="721000" />
       <workItem from="1575612617418" duration="4729000" />
-      <workItem from="1575910831389" duration="620000" />
+      <workItem from="1575910831389" duration="1544000" />
+      <workItem from="1575961948330" duration="593000" />
+      <workItem from="1575975100912" duration="204000" />
     </task>
     <servers />
   </component>
@@ -70,9 +73,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="360" y="98" width="646" height="532" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1575910940277" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1575910937494">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1575975258500">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575910937494" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1575975258500" />
   </component>
 </project>

@@ -34,6 +34,9 @@ plugins:
 - jekyll-commonmark
 - jekyll-include-cache
 - jemoji
+- jekyll-remote-theme
+
+remote_theme: daviddarnes/alembic
 
 # 3. Gem settings
 paginate: 12 # jekyll-paginate > items per page

@@ -6,7 +6,7 @@ categories: Technical-interview
 
 **Been interviewing with a lot of tech startups as a frontend dev, here are the technical questions I've been asked**
 
-So I've spent the last couple of weeks interviewing with a fair amount of tech startups in London, I thought some of you might find it interesting/helpful to see some of the technical questions I was asked.
+So I've spent the last couple of weeks interviewing with a fair amount of tech startups in Bangalore, I thought some of you might find it interesting/helpful to see some of the technical questions I was asked.
 
 Many of the positions I interviewed for where using Angular so a bunch of the questions are geared towards that.
 

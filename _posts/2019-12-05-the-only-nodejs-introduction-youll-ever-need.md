@@ -558,10 +558,7 @@ If you'd like to look further into node networking, here's a post from the offic
 
 Now that was quite some exercise.!!
 
-If you want to create NodeJs scalable web apps, you need to learn more than just writing servers and express routing.
+If you want to create NodeJs scalable web apps, you need to learn more than just writing servers and express routing. I suggest few books:
 
-I suggest few books here.
-
-[NodeJs the right way.](https://www.amazon.com/Node-js-Right-Way-Server-Side-JavaScript/dp/1937785734)
-
-[Web Development With Node and Express.](https://www.amazon.com/Web-Development-Node-Express-Leveraging/dp/1491949309)
+* [NodeJs the right way.](https://www.amazon.com/Node-js-Right-Way-Server-Side-JavaScript/dp/1937785734)
+* [Web Development With Node and Express.](https://www.amazon.com/Web-Development-Node-Express-Leveraging/dp/1491949309)

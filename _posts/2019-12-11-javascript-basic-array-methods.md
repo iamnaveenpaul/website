@@ -1,6 +1,6 @@
 ---
-image: "/assets/default-social-image.png"
 title: JavaScript Basic Array Methods
+image: "/assets/default-social-image.png"
 categories: JavaScript-arrays
 ---
 
@@ -188,26 +188,26 @@ console.log("After splice op " + string_arr);
 
 JavaScript provides multiple array features, see the references given below:
 
-[Functions Part 1](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-1/)
-[Functions Part 2](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-2/)
-[Functions Part 3](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-3/)
+* [Functions Part 1](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-1/)
+* [Functions Part 2](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-2/)
+* [Functions Part 3](https://www.geeksforgeeks.org/must-use-javascript-array-functions-part-3/)
 
 Note: You may check all the above definitions by entering them in the HTML script tag or directly into the console of the browser.
 
 **Recommended Posts:**
 
-[JavaScript | Array Iteration Methods](https://www.geeksforgeeks.org/javascript-array-iteration-methods/)
-[Understanding basic JavaScript codes.](https://www.geeksforgeeks.org/understanding-basic-javascript-codes/)
-[JavaScript | Get Date Methods](https://www.geeksforgeeks.org/javascript-get-date-methods/)
-[JavaScript | Object Methods](https://www.geeksforgeeks.org/javascript-object-methods/)
-[JavaScript | Set Date Methods](https://www.geeksforgeeks.org/javascript-set-date-methods/)
-[JavaScript methods to increment/decrement alphabetical letters](https://www.geeksforgeeks.org/javascript-methods-to-increment-decrement-alphabetical-letters/)
-[How to compare two JavaScript array objects using jQuery/JavaScript ?](https://www.geeksforgeeks.org/how-to-compare-two-javascript-array-objects-using-jquery-javascript/)
-[How to get the elements of one array which are not present in another array using JavaScript?](https://www.geeksforgeeks.org/how-to-get-the-elements-of-one-array-which-are-not-present-in-another-array-using-javascript/)
-[How to check whether an array is subset of another array using JavaScript ?](https://www.geeksforgeeks.org/how-to-check-whether-an-array-is-subset-of-another-array-using-javascript/)
-[What’s the difference between “Array()” and “[]” while declaring a JavaScript array?](https://www.geeksforgeeks.org/whats-the-difference-between-array-and-while-declaring-a-javascript-array/)
-[JavaScript | Array pop()](https://www.geeksforgeeks.org/javascript-array-prototype-pop/)
-[RMS Value Of Array in JavaScript](https://www.geeksforgeeks.org/rms-value-of-array-in-javascript/)
-[JavaScript | Array unshift()](https://www.geeksforgeeks.org/javascript-array-prototype-unshift-function/)
-[JavaScript | Array concat()](https://www.geeksforgeeks.org/javascript-array-prototype-concat-function/)
-[JavaScript | Array copyWithin()](https://www.geeksforgeeks.org/javascript-array-copywithin/)
+* [JavaScript, Array Iteration Methods](https://www.geeksforgeeks.org/javascript-array-iteration-methods/)
+* [Understanding basic JavaScript codes.](https://www.geeksforgeeks.org/understanding-basic-javascript-codes/)
+* [JavaScript, Get Date Methods](https://www.geeksforgeeks.org/javascript-get-date-methods/)
+* [JavaScript, Object Methods](https://www.geeksforgeeks.org/javascript-object-methods/)
+* [JavaScript, Set Date Methods](https://www.geeksforgeeks.org/javascript-set-date-methods/)
+* [JavaScript methods to increment/decrement alphabetical letters](https://www.geeksforgeeks.org/javascript-methods-to-increment-decrement-alphabetical-letters/)
+* [How to compare two JavaScript array objects using jQuery/JavaScript ?](https://www.geeksforgeeks.org/how-to-compare-two-javascript-array-objects-using-jquery-javascript/)
+* [How to get the elements of one array which are not present in another array using JavaScript?](https://www.geeksforgeeks.org/how-to-get-the-elements-of-one-array-which-are-not-present-in-another-array-using-javascript/)
+* [How to check whether an array is subset of another array using JavaScript ?](https://www.geeksforgeeks.org/how-to-check-whether-an-array-is-subset-of-another-array-using-javascript/)
+* [What’s the difference between “Array()” and “[]” while declaring a JavaScript array?](https://www.geeksforgeeks.org/whats-the-difference-between-array-and-while-declaring-a-javascript-array/)
+* [JavaScript, Array pop()](https://www.geeksforgeeks.org/javascript-array-prototype-pop/)
+* [RMS Value Of Array in JavaScript](https://www.geeksforgeeks.org/rms-value-of-array-in-javascript/)
+* [JavaScript, Array unshift()](https://www.geeksforgeeks.org/javascript-array-prototype-unshift-function/)
+* [JavaScript, Array concat()](https://www.geeksforgeeks.org/javascript-array-prototype-concat-function/)
+* [JavaScript, Array copyWithin()](https://www.geeksforgeeks.org/javascript-array-copywithin/)

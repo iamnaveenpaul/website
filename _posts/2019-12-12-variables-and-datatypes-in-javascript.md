@@ -235,3 +235,123 @@ fun();
 ```
 
 We began using let instead of var after ES2015 to define variables and also now if block is also counted as a block scope, so we get an error instead of 100 in the above case. If we adjust the let to var, we get 100 as output as if block wasn't considered a block scope earlier, that wasconsidered only for functions.
+
+**JavaScript Hoisting**
+
+In JavaScript, Hoisting is the default action to move all declarations before executing code at the top of the scope. Essentially, this offers us a benefit that they are pushed to the top of their scope irrespective of whether their scope is global or local irrespective of wherever the functions and variables are declared.
+
+This allows us to call functions before we even write them in our program.
+
+Note: JavaScript just hoists declarations, not initializations.
+
+Let's understand this exactly:
+
+The following is the sequence where the declaration and initialisation of the variable occurs.
+
+**Declaration to Initialisation/Assignment to Usage**
+
+```
+// Variable lifecycle
+let a;        // Declaration
+a = 100;      // Assignment
+console.log(a);  // Usage
+```
+
+Because JavaScript however, helps us to seamlessly define and initialize our variables, this is the most common pattern:
+
+`let a = 100;`
+
+Note that the Javascript declares the variable first in the context and then initializes it. It's also good to know that before any coding is performed, variable declarations are processed.
+
+Undeclared variables won't occur in javascript, however until code is executed to assign them. Consequently, when the assignment is executed, assigning a value to an undeclared variable implicitly creates it as a global variable. This means that the global variables are all undeclared variables.
+
+```
+// hoisting 
+function codeHoist(){ 
+    a = 10; 
+    let b = 50; 
+} 
+codeHoist(); 
+  
+console.log(a); // 10 
+console.log(b); // ReferenceError : b is not defined 
+```
+
+Explanation: We built a function called codeHoist() in the above code sample and in it, we have a variable which we did not declare using let/var/const and a let variable b. The undeclared variable is allocated by javascript to the global scope, so we can print it outside the function, but the scope is limited in the case of variable b and it is not accessible outside and we get a ReferenceError.
+
+Note: ReferenceError is different from undefined error. If we have a variable that is either not specified or explicitly defined as type undefined, an undefined error arises. When attempting to access a previously undeclared variable, ReferenceError is returned.
+
+**ES5**
+
+The variable that arises into our heads is var as we speak about ES5. Var hoisting is somewhat different from let/const hoisting. Let's see how hoisting works by using the var:
+
+```
+// var code (global) 
+console.log(name); // undefined 
+var name = 'Michael';  
+```
+
+Explanation of the above code, we tried to console the name of the variable that was later declared and assigned then using it, the compiler provides us undefined that we didn't expect as we could have had ReferenceError as we tried to use the name variable before declaring it.
+
+However the interpreter perceives this differently:
+
+```
+//how interpreter sees the above code 
+var name; 
+console.log(name); // undefined 
+name = 'Michael';  
+```
+
+**Function scoped variable**
+
+Now let us look at how variables that are scoped for function are hoisted.
+
+```
+//function scoped 
+function fun(){ 
+    console.log(name); 
+    var name = 'Mukul Latiyan';  
+} 
+fun(); // undefined 
+```
+
+There is no difference here as we get undefined as the code seen by the interpreter, for when compared to the code where we declared the variable globally:
+
+```
+//function scoped 
+function fun(){ 
+    var name; 
+    console.log(name); 
+    name = 'Mukul Latiyan'; 
+} 
+fun(); // undefined 
+```
+
+To prevent this pitfall, we should ensure that the variable is declared and allocated at the same time before it is used. Which is something like:
+
+```
+//in order to avoid it  
+function fun(){ 
+    var name = 'Mukul Latiyan'; 
+    console.log(name); // Mukul Latiyan 
+} 
+fun(); 
+```
+
+**ES6**
+
+**Let**
+
+We realize that the variables specified with let keywords are block scoped and not function scoped, so when it comes to hoisting it is not a concern.
+
+Example:
+
+```
+//let example(global) 
+console.log(name); 
+let name='Mukul Latiyan'; // ReferencError: name is not defined 
+```
+
+As before, we consider the output of the log to be undefined for the var keyword. Nonetheless, using undeclared variables since the es6 will not take kindly on us, the interpreter should spit out a Reference error directly. This ensures that our variable is always **declared** first.
+
+**const** acts like let when it comes to hoisting.

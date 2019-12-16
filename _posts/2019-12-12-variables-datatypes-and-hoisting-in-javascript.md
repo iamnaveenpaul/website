@@ -1,5 +1,5 @@
 ---
-title: Variables and Datatypes in JavaScript
+title: Variables, Datatypes and Hoisting in JavaScript
 image: "/assets/default-social-image.png"
 categories: JavaScript-basics
 ---

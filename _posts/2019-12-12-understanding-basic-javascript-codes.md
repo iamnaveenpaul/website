@@ -1,6 +1,6 @@
 ---
-image: "/assets/default-social-image.png"
 title: Understanding basic JavaScript codes.
+image: "/assets/default-social-image.png"
 categories: JavaScript-basics
 ---
 
@@ -100,3 +100,109 @@ This id must be distinctive on the web page because the JavaScript uses it in t
 The code simply says: "Get me the document element with id ResultsP and set the HTML to Hello World within that element!”
 
 It is important that the code that accesses the paragraph is otherwise after the paragraph, the code would attempt to access a paragraph before it existed on the page and make an error.
+
+**Change an element class JavaScript**
+
+The class name is used in HTML as a selector that helps to give meaning to the attributes of the element. The document.getElementById() function is used with the "id" keyword to retrieve the element in the document, and the "className" attribute can be used to change/append the element class.
+
+**Syntax:**
+
+`document.getElementById('myElement').className = "myclass";`
+
+Example 1: Switch the button class from "default" to "changedClass" in this script using the onclick event which switches the background color of the RED to GREEN button.
+
+```
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Change an element class with javascript</title> 
+        <style type="text/css"> 
+            .default{ 
+                background-color: red; 
+            } 
+            .changedClass{ 
+                background-color: green; 
+            } 
+            #myPara{ 
+                margin-top: 20px; 
+            } 
+            #myButton{ 
+                padding: 10px; 
+            } 
+            body { 
+                text-align:center; 
+            } 
+            h1 { 
+                color:green; 
+            } 
+        </style> 
+        <script type="text/javascript"> 
+            function changeClass() { 
+                document.getElementById('myButton').className = "changedClass"; 
+                var button_class = document.getElementById('myButton').className; 
+                document.getElementById('myPara').innerHTML = "New class name: "  
+                + button_class; 
+            } 
+        </script> 
+    </head> 
+    <body> 
+        <h1>This is my World</h1> 
+        <h2>Chenge class name of element</h2> 
+        <button class="default" onclick="changeClass()" 
+                    id="myButton">Click Here!</button><br> 
+        <p id="myPara">Old class name: default</p> 
+    </body> 
+</html>                     
+```
+
+Example 2: Using the onclick event, the button class was modified from “default” to "newclass1" and "newclass2."
+
+```
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Change an element class with javascript</title> 
+        <style type="text/css"> 
+            .default{ 
+                background-color: red; 
+                padding:5px; 
+                border:1px solid black; 
+                border-radius:3px; 
+            } 
+            .newclass1 { 
+                color:white; 
+                font-size:16px; 
+                font-weight:bold; 
+                border:1px solid black; 
+            } 
+            .newclass2 { 
+                padding: 10px; 
+                background-color:green; 
+                border-radius:3px; 
+            } 
+                h1 { 
+                color:green; 
+            } 
+            body { 
+                text-align:center; 
+            } 
+        </style> 
+        <script type="text/javascript"> 
+            function changeClass() { 
+                document.getElementById('myButton').className = "newclass1"; 
+                document.getElementById('myButton').classList.add("newclass2"); 
+                var button_class = document.getElementById('myButton').className; 
+                document.getElementById('myPara').innerHTML = "New class name: " 
+                + button_class; 
+            } 
+        </script> 
+    </head> 
+    <body> 
+        <h1>This is my World</h1> 
+        <h2>Change class name of element</h2> 
+        <button class="default" onclick="changeClass()"
+            id="myButton">Click Here!</button> 
+        <p id="myPara">Old class name: default</p> 
+    </body> 
+</html> 
+```

@@ -250,7 +250,6 @@ When trying to loop through the collection in the `*ngFor`, the collection is se
     <h3>Shell</h3><button (click)="toggle()">Toggle!</button>
     
     <div *ngIf="show" *ngFor="let thing of stuff">
-      {{ log(thing) }}
       <span>{{thing.name}}</span>
     </div>
   `
@@ -304,7 +303,6 @@ As a workaround use the `<ng-container>` element that allows you to use separate
 ```
 <ng-container *ngIf="show">
   <div *ngFor="let thing of stuff">
-    {{log(thing)}}
     <span>{{thing.name}}</span>
   </div>
 </ng-container>
@@ -315,7 +313,6 @@ As a workaround use the `<ng-container>` element that allows you to use separate
 ```
 <ng-template [ngIf]="show">
   <div *ngFor="let thing of stuff">
-    {{log(thing)}}
     <span>{{thing.name}}</span>
   </div>
 </ng-template>
@@ -338,7 +335,7 @@ Unfortunately, the Change Detection section of the dev guide is not written yet 
 Here’s my understanding of how change detection works:
 
 * Zone.js “monkey patches the world” — it intercepts all of the asynchronous APIs in the browser (when Angular runs). This is why we can use `setTimeout()` inside our components rather than something like `$timeout`... because `setTimeout()` is monkey patched.
-* Angular builds and maintains a tree of “change detectors”. There is one such change detector (class) per component/directive. (You can get access to this object by injecting [`ChangeDetectorRef`](https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html).) These change detectors are created when Angular creates components. They keep track of the state of all of your bindings, for dirty checking. These are, in a sense, similar to the automatic `$watches()` that Angular 1 would set up for `{{}}` template bindings. Unlike Angular 1, the change detection graph is a directed tree and cannot have cycles (this makes Angular 2 much more performant, as we'll see below).
+* Angular builds and maintains a tree of “change detectors”. There is one such change detector (class) per component/directive. (You can get access to this object by injecting [`ChangeDetectorRef`](https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html).) These change detectors are created when Angular creates components. They keep track of the state of all of your bindings, for dirty checking. These are, in a sense, similar to the automatic `$watches()` that Angular 1 would set up for {{}} template bindings. Unlike Angular 1, the change detection graph is a directed tree and cannot have cycles (this makes Angular 2 much more performant, as we'll see below).
 * When an event fires (inside the Angular zone), the code we wrote (the event handler callback) runs. It can update whatever data it wants to — the shared application model/state and/or the component’s view state.
 * After that, because of the hooks Zone.js added, it then runs Angular’s change detection algorithm. By default (i.e., if you are not using the `onPush` change detection strategy on any of your components), every component in the tree is examined once (TTL=1)... from the top, in depth-first order. (Well, if you're in dev mode, change detection runs twice (TTL=2). See [`ApplicationRef.tick()`](https://angular.io/docs/ts/latest/api/core/index/ApplicationRef-class.html#!#tick-anchor) for more about this.) It performs dirty checking on all of your bindings, using those change detector objects.
 * Lifecycle hooks are called as part of change detection. If the component data you want to watch is a primitive input property (String, boolean, number), you can implement `ngOnChanges()` to be notified of changes. If the input property is a reference type (object, array, etc.), but the reference didn't change (e.g., you added an item to an existing array), you'll need to implement `ngDoCheck()` (see [this SO answer](https://stackoverflow.com/a/34298708/215945) for more on this). You should only change the component's properties and/or properties of descendant components (because of the single tree walk implementation -- i.e., unidirectional data flow). Here's a [plunker](http://plnkr.co/edit/XWBSvE0NoQlRuOsXuOm0?p=preview) that violates that. Stateful pipes can also [trip you up](https://stackoverflow.com/questions/34456430/ngfor-doesnt-update-data-with-pipe-in-angular2/34497504#34497504) here.

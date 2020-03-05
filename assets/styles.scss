@@ -29,6 +29,43 @@ a,a:hover {
   font-size: 0.85em;
 }
 
+.home-tiles {
+  margin-top: 1rem;
+  text-align: left;
+  .item--post {
+    border-radius: 2px;
+    padding: 0 1%;
+    background: #fafafa;
+    font-size: 1rem;
+    box-shadow: 1px 1px 1px #ddd;
+    margin-bottom: 15px;
+    .typeset small {
+      padding: 0;
+      font-size: 0.7rem;
+      a {
+        color: #333;
+        background: none;
+        text-decoration: underline;
+      }
+    }
+    h2 {
+      font-size: 1.2rem;
+      line-height: initial;
+      margin: 0;
+      a,a:hover {
+        color: #222;
+        background: none;
+        text-decoration: underline;
+      }
+    }
+    .item--post::hover {
+      background: #eee;
+      box-shadow: 1px 1px 1px #ccc;
+      transition: all 0.9s;
+    }
+  }
+}
+
 .feature {
   background: #fff;
 

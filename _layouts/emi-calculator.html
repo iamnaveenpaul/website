@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+{% include site-header-calculator.html %}
+
+<main class="main emi-wrapper">
+  <div>
+      <h1 class="headline">EMI Calculator for Home Loan, Car Loan & Personal Loan</h1>
+      <form class="form">
+        <div class="form__entry">
+          <label class="form__entry-label" >Loan Amount</label>
+          <input type="text" class="form__entry-field" name="loanAmount" id="loanAmount" >
+        </div>
+        <div class="form__entry">
+          <label class="form__entry-label" >Interest Rate</label>
+          <input type="text" class="form__entry-field" name="interestRate" id="interestRate">
+        </div>
+        <div class="form__entry">
+          <label class="form__entry-label" >Term (Years)</label>
+          <input type="text" class="form__entry-field" name="termInYears" id="termInYears">
+        </div>
+        <div class="form__entry">
+          <label class="form__entry-label" >Extra Payment Amount</label>
+          <input type="text" class="form__entry-field" name="extraPaymentAmount" id="extraPaymentAmount">
+        </div>
+        <div class="form__buttons">
+          <button class="btn" type="submit">Calculate</button>
+          <p class="form__error"></p>
+        </div>
+      </form>
+      <div class="results">
+        <h2 class="headline headline--results">Add Extra Monthly Payments</h2>
+        <table class="table table-1">
+          <thead>
+            <tr>
+              <th class="table__header">Total Cost</th>
+              <th class="table__header">Total Monthly Payment</th>
+            </tr>
+          </thead>
+          <tbody class="table-1__tbody"></tbody>
+        </table>
+        
+        <h2 class="headline headline--results">With Extra Monthly Payments Breakdown</h2>
+        <table class="table table-2">
+          <thead>
+            <tr>
+              <th class="table__header">Year</th>
+              <th class="table__header">Total Interest</th>
+              <th class="table__header">Total Principal Payment</th>
+              <th class="table__header">Remaining Balance</th>
+              <th class="table__header">Monthly Breakdown</th>
+            </tr>
+          </thead>
+          <tbody class="table-2__tbody"></tbody>
+        </table>
+        
+        <h2 class="headline headline--results">Monthly Breakdown</h2>
+        <table class="table table-3">
+          <thead>
+            <tr>
+              <th class="table__header">Month</th>
+              <th class="table__header">Principal Payment</th>
+              <th class="table__header">Interest Payment</th>
+              <th class="table__header">Total Monthly Payment</th>
+              <th class="table__header">Remaining Balance </th>
+            </tr>
+          </thead>
+          <tbody class="table-3__tbody"></tbody>
+        </table>
+        
+        <h2 class="headline headline--results">Without Extra Monthly Payments</h2>
+        <table class="table table-4">
+          <thead>
+            <tr>
+              <th class="table__header">Total Cost</th>
+              <th class="table__header">Total Monthly Payment</th>
+            </tr>
+          </thead>
+          <tbody class="table-4__tbody"></tbody>
+        </table>
+        
+      </div>
+  </div>
+</main>
+
+{% include site-footer.html %}

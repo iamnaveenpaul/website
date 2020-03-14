@@ -5,42 +5,52 @@ layout: default
 {% include site-header-calculator.html %}
 
 <main class="main emi-wrapper">
-  <div>
+  <div class="container">
       <h1 class="headline">EMI Calculator for Home Loan, Car Loan & Personal Loan</h1>
-      <form class="form">
-        <div class="form__entry">
-          <label class="form__entry-label" >Loan Amount</label>
-          <input type="text" class="form__entry-field" name="loanAmount" id="loanAmount" >
+      <div class="clearfix">
+        <div class="form-wrapper">
+          <form class="form">
+            <div class="form__entry">
+              <label class="form__entry-label" >Loan Amount</label>
+              <input type="text" class="form__entry-field" name="loanAmount" id="loanAmount" >
+            </div>
+            <div class="form__entry">
+              <label class="form__entry-label" >Interest Rate</label>
+              <input type="text" class="form__entry-field" name="interestRate" id="interestRate">
+            </div>
+            <div class="form__entry">
+              <label class="form__entry-label" >Term (Years)</label>
+              <input type="text" class="form__entry-field" name="termInYears" id="termInYears">
+            </div>
+            <!-- <div class="form__entry">
+              <label class="form__entry-label" >Extra Payment Amount</label>
+              <input type="text" class="form__entry-field" name="extraPaymentAmount" id="extraPaymentAmount">
+            </div> -->
+            <div class="form__buttons">
+              <button class="btn" type="submit">Calculate</button>
+              <p class="form__error"></p>
+            </div>
+          </form>
         </div>
-        <div class="form__entry">
-          <label class="form__entry-label" >Interest Rate</label>
-          <input type="text" class="form__entry-field" name="interestRate" id="interestRate">
+      
+        <div class="chart-wrapper">
+          <canvas id="chart-area" width="400" height="400"></canvas>
+          <div class="meta-data">
+            <h2 class="headline headline--results">Your EMI</h2>
+            <table class="table table-1">
+              <thead>
+                <tr>
+                  <th class="table__header">Total Cost</th>
+                  <th class="table__header">Total Monthly Payment</th>
+                </tr>
+              </thead>
+              <tbody class="table-1__tbody"></tbody>
+            </table>
+          </div>
         </div>
-        <div class="form__entry">
-          <label class="form__entry-label" >Term (Years)</label>
-          <input type="text" class="form__entry-field" name="termInYears" id="termInYears">
-        </div>
-        <div class="form__entry">
-          <label class="form__entry-label" >Extra Payment Amount</label>
-          <input type="text" class="form__entry-field" name="extraPaymentAmount" id="extraPaymentAmount">
-        </div>
-        <div class="form__buttons">
-          <button class="btn" type="submit">Calculate</button>
-          <p class="form__error"></p>
-        </div>
-      </form>
+      </div>
+
       <div class="results">
-        <h2 class="headline headline--results">Add Extra Monthly Payments</h2>
-        <table class="table table-1">
-          <thead>
-            <tr>
-              <th class="table__header">Total Cost</th>
-              <th class="table__header">Total Monthly Payment</th>
-            </tr>
-          </thead>
-          <tbody class="table-1__tbody"></tbody>
-        </table>
-        
         <h2 class="headline headline--results">With Extra Monthly Payments Breakdown</h2>
         <table class="table table-2">
           <thead>
@@ -69,7 +79,7 @@ layout: default
           <tbody class="table-3__tbody"></tbody>
         </table>
         
-        <h2 class="headline headline--results">Without Extra Monthly Payments</h2>
+        <!-- <h2 class="headline headline--results">Without Extra Monthly Payments</h2>
         <table class="table table-4">
           <thead>
             <tr>
@@ -78,9 +88,9 @@ layout: default
             </tr>
           </thead>
           <tbody class="table-4__tbody"></tbody>
-        </table>
-        
+        </table> -->
       </div>
+    {% include post-comments.html %}
   </div>
 </main>
 

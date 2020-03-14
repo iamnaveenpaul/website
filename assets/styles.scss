@@ -48,6 +48,11 @@ a,a:hover {
         text-decoration: underline;
       }
     }
+    .article {
+      img {
+        max-width: 200px;
+      }
+    }
     h2 {
       font-size: 1.2rem;
       line-height: initial;
@@ -74,6 +79,7 @@ a,a:hover {
   // background-repeat: no-repeat;
   // background-size: cover;
   
+  background: none !important;
   .hero {
     margin-bottom: 2rem;
   }

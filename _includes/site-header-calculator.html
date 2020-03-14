@@ -1,3 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
 <header class="header">
   <div class="container">
     {% if site.logo %}{% include site-logo.html %}{% endif %}
@@ -41,7 +43,7 @@ input, textarea, select { background: none; margin: 0; padding: 0; line-height: 
 @media only screen and (min-width : 1200px) { }
 
 /* forms */
-.form { width: 100%; max-width: 350px; }
+.form { width: 100%; max-width: 250px; }
 .form__entry { margin: 10px 0 0; }
 .form__entry-label { display: block; margin-bottom: 5px;font-weight: bold; }
 .form__entry-field { display: block; width: 100%; line-height: normal; padding: 10px; margin: 0; border: 1px solid #000; }
@@ -55,6 +57,25 @@ input, textarea, select { background: none; margin: 0; padding: 0; line-height: 
 
 th, td {
   border: 1px solid #999;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.chart-wrapper,
+.form-wrapper {
+	float: left;
+	margin-right: 15px;
+	width: 45%;
+}
+.chart-wrapper {
+	/* max-width:250px;  */
+	position: relative;
+}
+.meta-data {
+	border: 1px solid #fff;
 }
 
 /* headlines */
@@ -71,7 +92,7 @@ input {
 }
 
 input {
-  padding: 0.2rem 1.2rem !important;
+  padding: 0.2rem 0.62rem !important;
 }
 
 .emi-wrapper {
@@ -83,53 +104,92 @@ input {
   </style>
 
   <script src="/assets/scripts/base-calc.js"></script>
+  <script src="/assets/scripts/utils.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 		
-		<script type="text/javascript">
-		
-			var results;
-		
-			function clearResults() {
-				$(".form__error").html("");
-				$('.table-1__tbody, .table-2__tbody, .table-3__tbody, .table-4__tbody').html("");
-			};
-		
-			$(function(){
-				$('body').on("click", ".js-ViewBreakdown", {}, function(e) {
-					var thisYear = results.withExtraPayment.payments[$(this).data("id")];
-					var monthlyBreakdown = thisYear.monthlyBreakdown;
-					$('.table-3__tbody').empty();
-					$.each(monthlyBreakdown,function(i,month){
-						$('.table-3__tbody').append('<tr><td class="table__cell">'+(i+1)+'</td><td class="table__cell">'+month.interestPayment+'</td><td class="table__cell">'+month.principalPayment+'</td><td class="table__cell">'+month.monthlyPayment+'</td><td class="table__cell">'+month.balance+'</td></tr>');
-					});
-				}).on('submit', 'form', {}, function(e) {
-					e.preventDefault();	
-					// clear previous results
-					clearResults();
-					// get our inputs
-					var rawInputs = $(this).serializeArray();
-					// convert these to numbers and create our argument array
-					var args = {};
-					for(var i = 0; i < rawInputs.length; i++) {
-						args[rawInputs[i].name] = parseFloat(rawInputs[i].value);
-					}
-					
-					// run the mortgage calculator
-					results = mortgageCalculators.monthlyMortgagePaymentsWithExtraPayments(args);
-					if(results.error) {
-						$(".form__error").html(results.error);
-					} else {
-						$('.table-1__tbody').html('<tr><td class="table__cell">'+results.withExtraPayment.totalCost+'</td><td class="table__cell">'+results.withExtraPayment.totalMonthlyPayment+'</td></tr>');
-						$('.table-2__tbody').empty();
-						$.each(results.withExtraPayment.payments,function(j,annualPayment){
-							$('.table-2__tbody').append('<tr><td class="table__cell">'+ (j+1) +'</td><td class="table__cell">'+ annualPayment.annualInterestPayment+'</td><td class="table__cell">'+annualPayment.annualPrincipalPayment+'</td><td class="table__cell">'+annualPayment.balance+'</td><td class="table__cell"><button class="btn js-ViewBreakdown" data-id="'+j+'" type="button">View</button></td></tr>');
-						});
-						$('.table-4__tbody').html('<tr><td class="table__cell">'+results.withoutExtraPayment.totalCost+'</td><td class="table__cell">'+results.withoutExtraPayment.totalMonthlyPayment+'</td></tr>');
-					}
+	<script type="text/javascript">
+
+		var results;
+
+		function clearResults() {
+			$(".form__error").html("");
+			$('.table-1__tbody, .table-2__tbody, .table-3__tbody, .table-4__tbody').html("");
+		};
+
+		$(function(){
+			$('body').on("click", ".js-ViewBreakdown", {}, function(e) {
+				var thisYear = results.withExtraPayment.payments[$(this).data("id")];
+				var monthlyBreakdown = thisYear.monthlyBreakdown;
+				$('.table-3__tbody').empty();
+				$.each(monthlyBreakdown,function(i,month){
+					$('.table-3__tbody').append('<tr><td class="table__cell">'+(i+1)+'</td><td class="table__cell">'+month.interestPayment+'</td><td class="table__cell">'+month.principalPayment+'</td><td class="table__cell">'+month.monthlyPayment+'</td><td class="table__cell">'+month.balance+'</td></tr>');
 				});
+			}).on('submit', 'form', {}, function(e) {
+				e.preventDefault();	
+				// clear previous results
+				clearResults();
+				// get our inputs
+				var rawInputs = $(this).serializeArray();
+				// convert these to numbers and create our argument array
+				var args = {};
+				for(var i = 0; i < rawInputs.length; i++) {
+					args[rawInputs[i].name] = parseFloat(rawInputs[i].value);
+				}
+
+				if(!args.extraPaymentAmount){
+					args.extraPaymentAmount = 0;
+				}
+				
+				// run the mortgage calculator
+				results = mortgageCalculators.monthlyMortgagePaymentsWithExtraPayments(args);
+				
+				console.log("--args--");
+				console.log(args);
+				console.log(results);
+
+				if(results.error) {
+					$(".form__error").html(results.error);
+				} else {
+					drawChart(args.loanAmount,results.withExtraPayment.totalCost-args.loanAmount);
+
+					$('.table-1__tbody').html('<tr><td class="table__cell">'+results.withExtraPayment.totalCost+'</td><td class="table__cell">'+results.withExtraPayment.totalMonthlyPayment+'</td></tr>');
+					$('.table-2__tbody').empty();
+					$.each(results.withExtraPayment.payments,function(j,annualPayment){
+						$('.table-2__tbody').append('<tr><td class="table__cell">'+ (j+1) +'</td><td class="table__cell">'+ annualPayment.annualInterestPayment+'</td><td class="table__cell">'+annualPayment.annualPrincipalPayment+'</td><td class="table__cell">'+annualPayment.balance+'</td><td class="table__cell"><button class="btn js-ViewBreakdown" data-id="'+j+'" type="button">View</button></td></tr>');
+					});
+					$('.table-4__tbody').html('<tr><td class="table__cell">'+results.withoutExtraPayment.totalCost+'</td><td class="table__cell">'+results.withoutExtraPayment.totalMonthlyPayment+'</td></tr>');
+				}
 			});
-		</script>
+		});
+	</script>
+
+	<script>
+		function drawChart(principal,interest){
+			var config = {
+			type: 'pie',
+			data: {
+					datasets: [{
+						data: [principal,interest],
+						backgroundColor: [
+							'rgb(54, 162, 235)',
+							'rgb(255, 99, 132)'
+						],
+						label: 'Dataset 1'
+					}],
+					labels: [
+						'Principal',
+						'Interest',
+					]
+				},
+				options: {
+					responsive: true
+				}
+			};
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		}
+	</script>
 </header>

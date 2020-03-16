@@ -351,7 +351,7 @@ textarea,
 select {
   &:focus,
   &:hover:focus {
-    outline: solid .12rem $focusColour;
+    // outline: solid .12rem $focusColour;
     outline-offset: -.12rem;
   }
 }

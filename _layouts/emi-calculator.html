@@ -13,14 +13,26 @@ layout: default
             <div class="form__entry">
               <label class="form__entry-label" >Loan Amount</label>
               <input type="text" class="form__entry-field" name="loanAmount" id="loanAmount" >
+
+              <div class="slidecontainer">
+                <input type="range" min="0" max="200" step="10" value="10" class="slider" id="loanValue">
+              </div>
             </div>
             <div class="form__entry">
               <label class="form__entry-label" >Interest Rate</label>
               <input type="text" class="form__entry-field" name="interestRate" id="interestRate">
+              
+              <div class="slidecontainer">
+                <input type="range" min="0" max="36" step="2.5" value="10" class="slider" id="loanInterest">
+              </div>
             </div>
             <div class="form__entry">
               <label class="form__entry-label" >Term (Years)</label>
               <input type="text" class="form__entry-field" name="termInYears" id="termInYears">
+              
+              <div class="slidecontainer">
+                <input type="range" min="0" max="20" step="5" value="5" class="slider" id="loanTenure">
+              </div>
             </div>
             <!-- <div class="form__entry">
               <label class="form__entry-label" >Extra Payment Amount</label>

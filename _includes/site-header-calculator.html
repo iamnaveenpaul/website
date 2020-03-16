@@ -8,6 +8,45 @@
   </div>
 
   {% include site-feature.html %}
+<style>
+	.slidecontainer {
+	  width: 100%;
+	}
+	
+	.slider {
+	  -webkit-appearance: none;
+	  width: 100%;
+	  height: 5px;
+	  border-radius: 5px;
+	  background: #d3d3d3;
+	  outline: none;
+	  opacity: 0.7;
+	  -webkit-transition: .2s;
+	  transition: opacity .2s;
+	}
+	
+	.slider:hover {
+	  opacity: 1;
+	}
+	
+	.slider::-webkit-slider-thumb {
+	  -webkit-appearance: none;
+	  appearance: none;
+	  width: 15px;
+	  height: 15px;
+	  border-radius: 55%;
+	  background: #4CAF50;
+	  cursor: pointer;
+	}
+	
+	.slider::-moz-range-thumb {
+	  width: 25px;
+	  height: 25px;
+	  border-radius: 50%;
+	  background: #4CAF50;
+	  cursor: pointer;
+	}
+</style>
 
   <style>
     /* Reset Styles */
@@ -99,6 +138,7 @@ input {
   font-size: 0.83rem;
 }
 
+
 /* Result Section */
 .results { margin: 25px 0 0; }
   </style>
@@ -109,6 +149,40 @@ input {
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+<script>
+	$(document).ready(function(){
+		var slider = document.getElementById("loanValue");
+		var output = document.getElementById("loanAmount");
+
+		var sliderInt = document.getElementById("loanInterest");
+		var outputInt = document.getElementById("interestRate");
+
+		var sliderTime = document.getElementById("loanTenure");
+		var outputTime = document.getElementById("termInYears");
+
+		output.value = slider.value;
+		outputInt.value = sliderInt.value;
+		outputTime.value = sliderTime.value;
+		
+		slider.oninput = function() {
+			output.value = this.value;
+			console.log(this.value);
+			//updateData(this.value);
+		}
+
+		sliderInt.oninput = function() {
+			outputInt.value = this.value;
+			console.log("Int ",this.value);
+			//updateData(this.value);
+		}
+
+		sliderTime.oninput = function() {
+			outputTime.value = this.value;
+			console.log("Time ",this.value);
+			//updateData(this.value);
+		}
+	})
+</script>
 		
 	<script type="text/javascript">
 

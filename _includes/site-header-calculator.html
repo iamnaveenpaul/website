@@ -153,6 +153,7 @@ input {
 	$(document).ready(function(){
 		var slider = document.getElementById("loanValue");
 		var output = document.getElementById("loanAmount");
+		var inLacs = 10000;
 
 		var sliderInt = document.getElementById("loanInterest");
 		var outputInt = document.getElementById("interestRate");
@@ -161,12 +162,15 @@ input {
 		var outputTime = document.getElementById("termInYears");
 
 		output.value = slider.value;
+		output.value = output.value*inLacs;
+
 		outputInt.value = sliderInt.value;
 		outputTime.value = sliderTime.value;
 		
 		slider.oninput = function() {
-			output.value = this.value;
-			console.log(this.value);
+			console.log("Before---- ",this.value);
+			output.value = this.value*inLacs;
+			console.log("Loan amount ",output.value);
 			//updateData(this.value);
 		}
 
@@ -192,6 +196,10 @@ input {
 			$(".form__error").html("");
 			$('.table-1__tbody, .table-2__tbody, .table-3__tbody, .table-4__tbody').html("");
 		};
+
+		function updateData(){
+			
+		}
 
 		$(function(){
 			$('body').on("click", ".js-ViewBreakdown", {}, function(e) {

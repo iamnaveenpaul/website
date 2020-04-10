@@ -1,11 +1,13 @@
 ---
-image: "/assets/default-social-image.png"
-title: A blazing fast Express server with these 5 easy steps
+image: "/assets/superhero-534120_640.jpg"
+title: A blazing fast Express webserver in 5 easy steps
 ---
 
 # Introduction
 Express is the one of most popular web frameworks and the top framework by a long mile for a NodeJs application.
 Its easy to use and at the same time with right configuration we can make it a very fast light weight webserver.
+
+<img class="width-100" src="/assets/superhero-534120_640.jpg"/>
 
 # gzip Compression
 Compressing your page content can reduce page size by up to 70%! I was testing an app with 8mb angular app after production build and deployment. The app used to take lot of time to load. Sometimes as much as 60 seconds on a good broadband network.
@@ -42,6 +44,8 @@ app.get('/index.html', function (req, res) {
 	res.render('index.html');
 });
 ```
+
+<img class="width-100" src="/assets/binary-1254502_960_720.png"/>
 
 # Run Express in Production Mode
 By default, Express will run in development mode, which is easy to overlook, especially for those just starting out with Node.js/Express.
@@ -88,7 +92,7 @@ module.exports = function(grunt) {
 # Increase Max Sockets
 By default the Node.js HTTP server has a socket pool limit of only 5. This is a very conservative number and most servers can handle a much higher number of sockets than this.
 
-Alternatively, you can allow as many sockets as possible:
+Alternatively, you can allow as many sockets as possible
 
 ```
 var http = require('http');

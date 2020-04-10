@@ -201,6 +201,12 @@ a,a:hover {
   }
 }
 
+.width-100 {
+  width: 100% !important;
+  object-fit: cover;
+  height: 250px;
+}
+
 .article--page h1 {
   display: none;
 }

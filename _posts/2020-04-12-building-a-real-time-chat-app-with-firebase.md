@@ -3,7 +3,7 @@ title: Building a Real-Time Chat App with Firebase
 image: "/assets/firebase.png"
 ---
 
-<img class="width-100" src="/assets/firebase.png"/>
+<img class="width-100" alt="Chat app with Firebase and Firechat" src="/assets/firebase.png"/>
 
 Out of the box, Firebase provides lots of server side side so that we can just concentrate on building the front end and UX of our chat app.
 

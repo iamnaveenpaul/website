@@ -7,7 +7,7 @@ title: A blazing fast Express webserver in 5 easy steps
 Express is the one of most popular web frameworks and the top framework by a long mile for a NodeJs application.
 Its easy to use and at the same time with right configuration we can make it a very fast light weight webserver.
 
-<img class="width-100" src="/assets/superhero-534120_640.jpg"/>
+<img class="width-100" alt="blazing fast Express webserver" src="/assets/superhero-534120_640.jpg"/>
 
 # gzip Compression
 Compressing your page content can reduce page size by up to 70%! I was testing an app with 8mb angular app after production build and deployment. The app used to take lot of time to load. Sometimes as much as 60 seconds on a good broadband network.

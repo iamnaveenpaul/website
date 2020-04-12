@@ -1,10 +1,12 @@
 ---
 title: How to convert excel to json with Node.js
-image: "/assets/default-social-image.png"
+image: "/assets/exceltojson.jpg"
 categories: Node.js
 ---
 
 How to convert excel to json with Node.js, Excel to json is a regular requiremnt for web applications node.js.
+
+<img class="width-100" alt="How to convert excel to json" src="/assets/exceltojson.jpg"/>
 
 You might sometimes have a necessity in an application to submit information via an Excel file or a task to interpret data from a bunch of Excel files or some analytics may be required to run. Excel files are commonly handled in web applications. This tutorial aims to make it easier for developers to read excel files using NodeJS.
 

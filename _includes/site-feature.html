@@ -10,13 +10,90 @@
 {% if feature_text or feature_image %}
 <!--  <div class="feature"{% if feature_image %} style="background-image: url({{ feature_image }})"{% endif %}>-->
   <div class="feature">
-    <div class="container typeset">
+    <!-- <div class="container typeset">
       <div class="hero">
         {{ feature_text | markdownify }}
       </div>
+    </div> -->
+
+    <div class="container-fluid plans">
+      <h1>Get a Free Custom Website with a Blog</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="title">Basic</h2>
+              <p class="price">
+                FREE
+              </p>
+              <span class="description">Personal Businesses</span>
+              
+              <a href="https://forms.gle/tZh7YkCZSknHJxzM9" class="btn">Select Plan</a>
+              <!-- <div class="line"></div> -->
+            </div>
+      
+            <ul class="features">
+              <li>- Readymade 1 page design</li>
+              <li>- Unlimited blog posts</li>
+              <li>- Mobile responsive design</li>
+              <li>- Includes 1 year Hosting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="title">Premium</h2>
+            <p class="price">
+                99
+                <span>$</span>
+            </p>
+            <span class="description">Best for small Businesses</span>
+            <a href="https://forms.gle/tZh7YkCZSknHJxzM9" class="btn">Select Plan</a>
+            <!-- <div class="line"></div> -->
+            </div>
+      
+            <ul class="features">
+              <li>- Custom design upto 4 pages</li>
+              <li>- Unlimited blog posts</li>
+              <li>- Mobile responsive design</li>
+              <li>- Custom domain </li>
+              <li>- Google analytics </li>
+              <li>- Includes 1 year Hosting</li>
+              <li>- Includes 3 months email support </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="title">Business</h2>
+            <p class="price">
+                299
+                <span>$</span>
+            </p>
+            <span class="description">Best for Small & Medium Businesses</span>
+            <a href="https://forms.gle/tZh7YkCZSknHJxzM9" class="btn">Select Plan</a>
+            <!-- <div class="line"></div> -->
+            </div>
+      
+            <ul class="features">
+              <li>- Custom design upto 10 pages</li>
+              <li>- Unlimited blog posts</li>
+              <li>- Mobile responsive design</li>
+              <li>- Custom domain</li>
+              <li>- Google analytics</li>
+              <li>- Includes Lifetime Hosting</li>
+              <li>- Includes 1 year email support </li>
+              <li>- Upto 5 custom email addresses </li>
+              <li>- Annual renewal $149 </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <h1>Web & Software Development Training Courses</h1>
       <div class="row clearfix">
         <div class="col-sm-4">
@@ -111,11 +188,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid typeset">
       <div class="home-tiles">
+        <br>
         <h3>Latest Blogs</h3>
+        <br>
         <article class="article article--page typeset">
     
           {% if paginator.posts %}

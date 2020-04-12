@@ -36,6 +36,25 @@
 
     {% include site-before-start.html %}
     <script data-ad-client="ca-pub-9622851826323886" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script>
+    
+    $(document).ready(function(){
+      if(window.location.pathname != "/"){
+        $("body").css({"background": "#ffffff","color":"#333333"});
+        $(".typeset h1").css({"color":"#333333"});
+        $(".typeset h2").css({"color":"#333333"});
+        $(".typeset h3").css({"color":"#333333"});
+      }
+
+    })
+
+    </script>
+
   </head>
 
   <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">

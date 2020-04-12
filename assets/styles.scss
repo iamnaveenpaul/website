@@ -23,22 +23,120 @@ a,a:hover {
   overflow-x: auto;
 }
 
+.plans {
+  h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center !important;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .col-md-6 {
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+    max-height: 500px;
+    text-align: center;
+  }
+  
+  .card {
+    font-size: 1rem;
+    height: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #666;
+  }
+  .card:hover {
+    border: 1px solid $focusColour;
+    transition: all 0.9s;
+  }
+  
+  .card-header {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+      .title {
+        font-size: 1em;
+        font-weight: 400;
+        span {
+          color: $focusColour;
+        }
+      }
+  
+      .price {
+        font-size: 1.5em;
+        color: $focusColour;
+        margin: 0 auto;
+        padding: 5px 0 10px 0;
+        span {
+          font-size: .5em;
+          color: inherit;
+        }
+      }
+    }
+  
+  .features {
+    height: 70%;
+    text-align: left;
+    list-style: none;
+    padding: 1rem;
+    li {
+      font-size: 0.88em;
+    }
+  }
+  
+  .line {
+    width: 33.33%;
+    margin: 10px auto 0;
+    height: 2px;
+    background-color: $focusColour;
+  }
+  
+  .btn {
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: $focusColour;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: $focusColour;
+    }
+  }
+
+}
+
 .typeset code, .typeset pre {
-  background-color: #efefef;
+  background-color: $boxColour;
   line-height: 1.2rem;
-  font-size: 0.85em;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  padding: 1%;
 }
 
 .home-tiles {
   margin-top: 1rem;
   text-align: left;
   .item--post {
-    border-radius: 2px;
-    padding: 0 1%;
-    background: #fafafa;
+    border-radius: 10px;
+    padding: .5% 2%;
+    background: #2d373a;
     font-size: 1rem;
-    box-shadow: 1px 1px 1px #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
     .typeset small {
       padding: 0;
       font-size: 0.7rem;
@@ -53,12 +151,15 @@ a,a:hover {
         max-width: 200px;
       }
     }
+    h1 {
+      font-size: 1.55rem;
+    }
     h2 {
-      font-size: 1.2rem;
+      font-size: 2.35rem;
       line-height: initial;
       margin: 0;
       a,a:hover {
-        color: #222;
+        color: $featureBackgroundColour;
         background: none;
         text-decoration: underline;
       }
@@ -85,7 +186,6 @@ a,a:hover {
   }
 
   .hero p {
-    font-size: 0.9rem;
     line-height: 1.4rem;
     margin: 0;
   }
@@ -204,8 +304,10 @@ a,a:hover {
 .width-100 {
   width: 100% !important;
   object-fit: cover;
-  height: 250px;
+  max-height: 250px;
+  height: 100%;
   max-width: 1200px !important;
+  border-radius: 10px;
 }
 
 .article--page h1 {

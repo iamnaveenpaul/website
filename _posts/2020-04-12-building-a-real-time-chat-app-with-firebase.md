@@ -18,12 +18,13 @@ Below are few things that Firebase gives us.
 
 # If you want to start playing with the app right away, here's the link to a working Firebase chat app with complete free source code.
 
-https://github.com/iamnaveenpaul/firebase-chat-app
+<a href="https://github.com/iamnaveenpaul/firebase-chat-app">https://github.com/iamnaveenpaul/firebase-chat-app</a>
 
 
 # Signup for Firebase to authenticate users
 Firechat requires Firebase in order to authenticate users and store data. You can sign up  for a free account.
-https://console.firebase.google.com/u/0/?utm_source=firechat&pli=1
+<a href="https://console.firebase.google.com/u/0/?utm_source=firechat&pli=1">https://console.firebase.google.com/u/0/?utm_source=firechat&pli=1</a>
+
 
 
 # How to setup Firebase with a Jquery app

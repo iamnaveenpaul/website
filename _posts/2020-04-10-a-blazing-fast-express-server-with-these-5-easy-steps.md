@@ -45,8 +45,6 @@ app.get('/index.html', function (req, res) {
 });
 ```
 
-<img class="width-100" src="/assets/binary-1254502_960_720.png"/>
-
 # Run Express in Production Mode
 By default, Express will run in development mode, which is easy to overlook, especially for those just starting out with Node.js/Express.
 

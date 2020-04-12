@@ -87,7 +87,7 @@ encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Griva School of Coding" # Site name or title, also used in jekyll-seo-tag
 #logo: "/assets/logos/logo.png" # Site logo, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logo-transparent.png" # Site logo, also used in jekyll-seo-tag
 description: "Griva School of Coding | Learn MEAN stack, JavaScript, NodeJs, MongoDb, Express Js, Java, SpringBoot, Angular, Angular Js, React Js in Bangalore" # Site description and default description, also used in jekyll-seo-tag
 url: "https://griva.in" # Site url, also used in jekyll-seo-tag
 baseurl: ""

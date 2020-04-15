@@ -4,7 +4,7 @@ image: "/assets/exceltojson.jpg"
 categories: Node.js
 ---
 
-How to convert excel to json with Node.js, Excel to json is a regular requiremnt for web applications node.js.
+How to convert excel to json with Node.js, Excel to json is a regular requirement for web applications node.js.
 
 <img class="width-100" alt="How to convert excel to json" src="/assets/exceltojson.jpg"/>
 
@@ -343,18 +343,8 @@ Use this code to convert json just below the excel. `req.file.path` corresponds 
 
 **Conclusion**
 
-Excel to json is a regular web server requirement. This guide describes how simple in Node.js is to accomplish it.
+Excel to json is a regular web server requirement. This guide describes how simple in Node.js it is to accomplish it.
 
-**Suggest**
+**Check this tutorial in the same series to convert json data into an excel file with download option**
 
-* [MEAN Stack 2.0 — Learn Angular 2, Node.js, Express and MongoDb](https://codek.tv/v/HJ8Ldgvb)
-* [Node.js Tutorial with Visual Studio Code over 4 Hours](https://codek.tv/v/fFgLjwHcYdo)
-* [Learn How To Deploy Node.Js App on Google Compute Engine](https://codequs.com/a/SJv5lWPF)
-* [Learn and Understand NodeJS](https://codequs.com/a/B15yw5Ou)
-* [Learn Nodejs by Building 12 Projects.](https://codequs.com/a/HJwY85__)
-* [Learn Node.js from scratch: From Beginner to Advanced](https://codequs.com/p/HkNRG483H/learn-node-js-from-scratch-from-beginner-to-advanced)
-* [Learn Node.js - Node.js API Development for Beginners](https://codequs.com/p/BJ8lFPEPE/learn-node-js-node-js-api-development-for-beginners)
-* [Node.js MongoDB Tutorial, Building CRUD App with Node.js Express & MongoDB](https://codequs.com/p/HkXRinGHS/node-js-mongodb-tutorial-building-crud-app-with-node-js-express-mongodb)
-* [Testing Node.js with Mocha](https://codequs.com/p/S1nupH3F4/testing-node-js-with-mocha)
-* [Black Clouds and Silver Linings in NodeJS Security](https://codequs.com/p/Hk6Jp4kDH/black-clouds-and-silver-linings-in-nodejs-security)
-* [Zero to Hero with Nodejs](https://codequs.com/p/HyXZ7_Q9G/zero-to-hero-with-nodejs)
+* [Convert json data into an excel file with download option](https://griva.in/2020/04/15/json-to-excel-conversion-in-nodejs/)

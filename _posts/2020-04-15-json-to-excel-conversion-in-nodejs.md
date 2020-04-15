@@ -3,8 +3,6 @@ title: JSON to Excel conversion in Nodejs
 image: "/assets/exceltojson.jpg"
 ---
 
-var json2xls = require('json2xls');
-
 # How to download JSON data into excel file
 
 This is second part in our series dealing with Excel file formats using NodeJS. Lets start by installing **json2xls** node module in our app
@@ -65,4 +63,4 @@ After doing this, you can see that the data.xlsx file will be created in the sam
 
 We have made a tutorial to convert excel to json also. Check this link
 
-[https://griva.in/node.js/2019/12/05/how-to-convert-excel-to-json-with-nodejs/](http://)
+[Convert excel to json with nodejs](https://griva.in/node.js/2019/12/05/how-to-convert-excel-to-json-with-nodejs)

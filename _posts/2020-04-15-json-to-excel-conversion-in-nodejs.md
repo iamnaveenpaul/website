@@ -5,7 +5,10 @@ image: "/assets/exceltojson.jpg"
 
 # How to download JSON data into excel file
 
-This is second part in our series dealing with Excel file formats using NodeJS. Lets start by installing **json2xls** node module in our app
+This is second part in our series dealing with Excel file formats using NodeJS. Lets start by installing **json2xls** node module in our app.
+
+Earlier, we had made a tutorial to upload excel file and convert to json.
+[Convert excel to json with nodejs](https://griva.in/node.js/2019/12/05/how-to-convert-excel-to-json-with-nodejs)
 
 <img class="width-100" alt="How to convert excel to json" src="/assets/exceltojson.jpg"/>
 

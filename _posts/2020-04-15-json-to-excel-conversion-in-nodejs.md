@@ -4,18 +4,17 @@ image: "/assets/exceltojson.jpg"
 ---
 
 # How to download JSON data into excel file
+<img class="width-100" alt="How to convert excel to json" src="/assets/exceltojson.jpg"/>
 
 This is second part in our series dealing with Excel file formats using NodeJS. Lets start by installing **json2xls** node module in our app.
 Earlier, we had made a tutorial to upload excel file and convert to json.
 [Convert excel to json with nodejs](https://griva.in/node.js/2019/12/05/how-to-convert-excel-to-json-with-nodejs)
 
 
-<img class="width-100" alt="How to convert excel to json" src="/assets/exceltojson.jpg"/>
 
 ```
 npm i json2xls
 ```
-
 
 Lets build a temporary array with the required columns and then convert it into xls for immediate downloadable file.
 
@@ -63,7 +62,10 @@ fs.writeFileSync('data.xlsx', xls, 'binary');
 ```
 
 After doing this, you can see that the data.xlsx file will be created in the same directory.
-
 We have made a tutorial to convert excel to json also. Check this link
 
 [Convert excel to json with nodejs](https://griva.in/node.js/2019/12/05/how-to-convert-excel-to-json-with-nodejs)
+
+
+An option to download data from MySql or Mongodb results into excel or xls or even CSV is a very powerful tool to give to your users.
+In the same series, we will see how to do the same in different languages and frameworks like Python, Java, etc.

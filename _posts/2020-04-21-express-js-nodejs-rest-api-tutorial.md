@@ -76,7 +76,7 @@ app.listen(port, () => console.log(`Example app listening at http://localhost:${
 
 And then go to your terminal and start the Nodejs server by running
 ```
-$ node app.js
+$ node index.js
 ```
 
 If you go to http://localhost:3000/, you should see **Hello World** in the broswer.

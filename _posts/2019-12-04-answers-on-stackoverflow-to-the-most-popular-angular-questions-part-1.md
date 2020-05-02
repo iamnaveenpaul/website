@@ -442,7 +442,7 @@ hidden="{{isHidden}}" // isHidden = false;
 ```
 are the same as
 
-`hidden="true"`
+` hidden="true" `
 
 and will not show the element.
 
